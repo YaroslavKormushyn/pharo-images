@@ -1,0 +1,1 @@
+MatrixVisualizer subclassesDo: [ :sub |	^ sub name ].COOSparseMatrix new className 

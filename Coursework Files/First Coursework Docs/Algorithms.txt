@@ -1,0 +1,95 @@
+***COO****
+*****************NON ZERO INTERSECTION**********************
+
+
+leftNonZero := OrderedCollection new.
+	[leftMatrixMarker isNotNil ]
+		whileTrue: [ leftNonZero addIfNotPresent: leftMatrixMarker row.
+					leftMatrixMarker := leftMatrixMarker rightNeighbour ].
+	
+	rightNonZero := OrderedCollection new.
+	[rightMatrixMarker isNotNil]
+		whileTrue: [ rightNonZero addIfNotPresent: rightMatrixMarker row.
+					rightMatrixMarker := rightMatrixMarker rightNeighbour ].
+	
+	nonZeroIntersection := leftNonZero intersection: rightNonZero.
+
+
+nonZeroIntersection 
+		do: [ :rowIndex |
+			nonZeroIntersection 
+				do: [ :columnIndex | 
+					(1 to: columnNumber) 
+						do: [ :k | 
+							sum := sum + 
+							((self at: rowIndex at: k) * (transposed at: columnIndex at: k)) ].
+					sum = 0
+						ifFalse: [
+								newNode := COOMatrixNode 
+										row: rowIndex 
+										column: columnIndex
+										value: sum.
+								tail rightNeighbour: newNode.
+								newNode leftNeighbour: tail.
+								tail := newNode.
+								sum := 0]]].
+
+
+*****************NAIVE**********************
+
+
+	sum := 0.
+	tail := COOMatrixNode new.
+	head := tail.
+	
+	(1 to: result rowNumber)
+		do: [ :rowIndex |
+			(1 to: result columnNumber)
+				do: [ :columnIndex | 
+					(1 to: columnNumber) 
+						do: [ :k | 
+							sum := sum + 
+							((self at: rowIndex at: k) * (transposed at: columnIndex at: k)) ].
+					sum = 0
+						ifFalse: [
+								newNode := COOMatrixNode 
+										row: rowIndex 
+										column: columnIndex
+										value: sum.
+								tail rightNeighbour: newNode.
+								newNode leftNeighbour: tail.
+								tail := newNode.
+								sum := 0]]].
+
+
+*****************CRAP************************
+***third loop****
+	[ leftMatrixMarker isNotNil 
+					and: [ rightMatrixMarker isNotNil 
+							and: [ leftMatrixMarker row = currentLeftRow 
+							and: [ rightMatrixMarker row = currentRightColumn 
+									and: [ leftMatrixMarker column = rightMatrixMarker column ] ] ] ] ]
+						whileTrue: [ 
+
+
+
+
+
+
+
+***LIL***
+(1 to: result columnNumber) do: [ :columnIndex | 
+			sum := ((rows at: rowIndex) 
+					collect: [ :leftNode | 
+								index := (other rows at: columnIndex) 
+											findFirst: [ :rightNode | rightNode column = leftNode column ].
+								index = 0
+									ifFalse: [ leftNode value * ((other rows at: columnIndex) at: index) value ]] 
+					thenReject: [:el | el isNil ])
+			detectSum: [ :each | each ].
+			sum = 0
+				ifFalse: [ list addLast: (LILSparseMatrixNode
+										column: columnIndex 
+										value: sum).
+						sum := 0 ]
+			 ].

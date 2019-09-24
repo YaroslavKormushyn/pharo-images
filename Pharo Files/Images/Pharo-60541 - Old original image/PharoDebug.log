@@ -1,0 +1,3610 @@
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\kormu\Documents\Pharo\vms\private\6521\PharoV60.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+24 February 2019 11:38:25.95825 am
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+VM: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Sat Jan 5 20:00:11 2019 CommitHash: 7a3c6b6 Plugins: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60540]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\kormu\Documents\Phar...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\kormu\Documents\Phar...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\kormu\Documents\Pharo\vms\private\6521\P...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\kormu\Documents\Pharo\vms\private\6521\PharoV60.sources'
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	nil
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+SmalltalkImage class>>startUp:
+	Receiver: SmalltalkImage
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(size 205)
+		format: 	65541
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SmalltalkImage
+		classPool: 	a Dictionary(#CompilerClass->OpalCompiler #LastImagePath->'C:\Users\...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Support'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SmalltalkImage)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SmalltalkImage
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-02-24T11:38:25.89625+02:00
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-02-24T11:38:25.89625+02:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-02-24T11:38:25.89625+02:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-02-24T11:38:25.89625+02:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-02-24T11:38:25.89625+02:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-02-24T11:38:25.89625+02:00
+
+
+SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+CurrentExecutionEnvironment class>>activate:for:
+	Receiver: CurrentExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	a DefaultExecutionEnvironment
+		arg2: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		superclass: 	ProcessLocalVariable
+		methodDict: 	a MethodDictionary(#default->CurrentExecutionEnvironment>>#default ...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CurrentExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		soleInstance: 	a CurrentExecutionEnvironment
+
+
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+	Receiver: a DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+a DefaultExecutionEnvironment
+
+DefaultExecutionEnvironment class>>beActiveDuring:
+	Receiver: DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+		superclass: 	ExecutionEnvironment
+		methodDict: 	a MethodDictionary(#prepareForNewProcess:->DefaultExecutionEnvironm...etc...
+		format: 	0
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#DefaultExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		instance: 	a DefaultExecutionEnvironment
+
+
+SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+[ Smalltalk snapshot: true andQuit: true ] in WorldState class>>saveAndQuit
+	Receiver: WorldState
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#activeHand->WorldState>>#activeHand #activeHand...etc...
+		format: 	65548
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldState. OSWindowWorldState}
+		name: 	#WorldState
+		classPool: 	a Dictionary(#CanSurrenderToOS->true #DebugShowDamage->false #Deferr...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ Smalltalk snapshot: true andQuit: true ]
+	Arguments and temporary variables: 
+		arg1: 	[ tmp1 show ]
+		tmp1: 	nil
+		tmp2: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WorldState class>>saveAndQuit
+		startpc: 	39
+		numArgs: 	0
+
+
+CursorWithMask(Cursor)>>showWhile:
+	Receiver: ((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r11000000000000000000
+...etc...
+	Arguments and temporary variables: 
+		arg1: 	[ Smalltalk snapshot: true andQuit: true ]
+		tmp1: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r1000...etc...
+	Receiver's instance variables: 
+		bits: 	a Bitmap of length 16
+		width: 	16
+		height: 	16
+		depth: 	1
+		offset: 	(-1@ -1)
+		maskForm: 	Form(16x16x1)
+
+
+WorldState class>>saveAndQuit
+	Receiver: WorldState
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#activeHand->WorldState>>#activeHand #activeHand...etc...
+		format: 	65548
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldState. OSWindowWorldState}
+		name: 	#WorldState
+		classPool: 	a Dictionary(#CanSurrenderToOS->true #DebugShowDamage->false #Deferr...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+[ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ tmp2 = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: arg1) ].
+		self showShortcut ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(119396096)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(125@393) mouseUp 99961281 nil]
+		tmp1: 	a WorldMorph(562956288) [world]
+		tmp2: 	0
+	Receiver's instance variables: 
+		bounds: 	(7.0@392.0) corner: (216.0@410.0)
+		owner: 	a MenuMorph(333027840)
+		submorphs: 	#()
+		fullBounds: 	(7.0@392.0) corner: (216.0@410.0)
+		color: 	Color black
+		extension: 	a MorphExtension (542034944)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: ...etc...
+	Arguments and temporary variables: 
+		arg1: 	[ tmp1 show ]
+		tmp1: 	nil
+		tmp2: 	nil
+	Receiver's instance variables: 
+		outerContext: 	ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+		startpc: 	138
+		numArgs: 	0
+
+
+CursorWithMask(Cursor)>>showWhile:
+	Receiver: ((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r100000000000000000000...etc...
+	Arguments and temporary variables: 
+		arg1: 	[ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: sele...etc...
+		tmp1: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r1000...etc...
+	Receiver's instance variables: 
+		bits: 	a Bitmap of length 16
+		width: 	16
+		height: 	16
+		depth: 	1
+		offset: 	(-1@ -1)
+		maskForm: 	Form(16x16x1)
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(119396096)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(125@393) mouseUp 99961281 nil]
+		tmp1: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(7.0@392.0) corner: (216.0@410.0)
+		owner: 	a MenuMorph(333027840)
+		submorphs: 	#()
+		fullBounds: 	(7.0@392.0) corner: (216.0@410.0)
+		color: 	Color black
+		extension: 	a MorphExtension (542034944)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+	Receiver: a ToggleMenuItemMorph(119396096)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(125@393) mouseUp 99961281 nil]
+	Receiver's instance variables: 
+		bounds: 	(7.0@392.0) corner: (216.0@410.0)
+		owner: 	a MenuMorph(333027840)
+		submorphs: 	#()
+		fullBounds: 	(7.0@392.0) corner: (216.0@410.0)
+		color: 	Color black
+		extension: 	a MorphExtension (542034944)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+	Receiver: a ToggleMenuItemMorph(119396096)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(125@393) mouseUp 99961281 nil]
+	Receiver's instance variables: 
+		bounds: 	(7.0@392.0) corner: (216.0@410.0)
+		owner: 	a MenuMorph(333027840)
+		submorphs: 	#()
+		fullBounds: 	(7.0@392.0) corner: (216.0@410.0)
+		color: 	Color black
+		extension: 	a MorphExtension (542034944)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(125@393) mouseUp 99961281 nil]
+	Arguments and temporary variables: 
+		arg1: 	a ToggleMenuItemMorph(119396096)'Save and quit'
+	Receiver's instance variables: 
+		timeStamp: 	99961281
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(125@393)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+ToggleMenuItemMorph(Morph)>>handleEvent:
+	Receiver: a ToggleMenuItemMorph(119396096)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(125@393) mouseUp 99961281 nil]
+	Receiver's instance variables: 
+		bounds: 	(7.0@392.0) corner: (216.0@410.0)
+		owner: 	a MenuMorph(333027840)
+		submorphs: 	#()
+		fullBounds: 	(7.0@392.0) corner: (216.0@410.0)
+		color: 	Color black
+		extension: 	a MorphExtension (542034944)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+MorphicEventDispatcher>>dispatchDefault:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[(125@393) mouseUp 99961281 nil]
+		arg2: 	a ToggleMenuItemMorph(119396096)'Save and quit'
+		tmp1: 	nil
+		tmp2: 	1
+		tmp3: 	nil
+		tmp4: 	#()
+		tmp5: 	true
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(119396096)'Save and quit'
+
+
+MorphicEventDispatcher>>handleMouseUp:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[(125@393) mouseUp 99961281 nil]
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(119396096)'Save and quit'
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(125@393) mouseUp 99961281 nil]
+	Arguments and temporary variables: 
+		arg1: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	99961281
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(125@393)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SmalltalkImage class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+[ Smalltalk snapshot: true andQuit: true ] in WorldState class>>saveAndQuit
+BlockClosure>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+WorldState class>>saveAndQuit
+[ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ tmp2 = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: arg1) ].
+		self showShortcut ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+BlockClosure>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ToggleMenuItemMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+MenuMorph(Morph)>>processEvent:using:
+MenuMorph(Morph)>>processEvent:
+MenuMorph>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := arg1.
+tmp3 := arg2
+	handleFocusEvent: (arg1 transformedBy: (arg2 transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :arg2 | 
+self activeHand: arg2.
+arg2 processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+
+===============================================================================
+Notice: Pharo cannot locate the sources file named C:\Users\kormu\Documents\Pharo\vms\private\6521\PharoV60.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+===============================================================================
+THERE_BE_DRAGONS_HERE
+Error: Could not find version 'Roassal2-YaroslavKormushyn.1766'. Maybe you need to add a repository?
+24 February 2019 5:27:21.575593 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60540]
+
+MCRepositoryGroup(Object)>>error:
+	Receiver: a MCRepositoryGroup
+	Arguments and temporary variables: 
+		aString: 	'Could not find version ''Roassal2-YaroslavKormushyn.1766''. Maybe you...etc...
+	Receiver's instance variables: 
+		repositories: 	an OrderedCollection(a MCSmalltalkhubRepository(http://smalltalkh...etc...
+		useCache: 	true
+
+
+[ self
+	error:
+		'Could not find version ' , aVersionInfo name printString
+			, '. Maybe you need to add a repository?' ] in MCRepositoryGroup>>versionWithInfo:
+	Receiver: a MCRepositoryGroup
+	Arguments and temporary variables: 
+		aVersionInfo: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+	Receiver's instance variables: 
+		repositories: 	an OrderedCollection(a MCSmalltalkhubRepository(http://smalltalkh...etc...
+		useCache: 	true
+
+
+MCRepositoryGroup>>versionWithInfo:ifNone:
+	THERE_BE_DRAGONS_HERE
+Error: Could not find version 'Roassal2-YaroslavKormushyn.1766'. Maybe you need to add a repository?
+24 February 2019 5:27:59.041593 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2401 uuid: 29232e0e-c9e3-41d8-ae75-519db862e02c Jun 28 2018
+VM: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Thu Jun 28 14:56:30 2018 CommitHash: a8a1dc1 Plugins: 201806281256 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60540]
+
+MCRepositoryGroup(Object)>>error:
+	Receiver: a MCRepositoryGroup
+	Arguments and temporary variables: 
+		aString: 	'Could not find version ''Roassal2-YaroslavKormushyn.1766''. Maybe you...etc...
+	Receiver's instance variables: 
+		repositories: 	an OrderedCollection(a MCSmalltalkhubRepository(http://smalltalkh...etc...
+		useCache: 	true
+
+
+[ self
+	error:
+		'Could not find version ' , aVersionInfo name printString
+			, '. Maybe you need to add a repository?' ] in MCRepositoryGroup>>versionWithInfo:
+	Receiver: a MCRepositoryGroup
+	Arguments and temporary variables: 
+		aVersionInfo: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+	Receiver's instance variables: 
+		repositories: 	an OrderedCollection(a MCSmalltalkhubRepository(http://smalltalkh...etc...
+		useCache: 	true
+
+
+MCRepositoryGroup>>versionWithInfo:ifNone:
+	Receiver: a MCRepositoryGroup
+	Arguments and temporary variables: 
+		aVersionInfo: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+		aBlock: 	[ self
+	error:
+		'Could not find version ' , aVersionInfo name printStr...etc...
+	Receiver's instance variables: 
+		repositories: 	an OrderedCollection(a MCSmalltalkhubRepository(http://smalltalkh...etc...
+		useCache: 	true
+
+
+MCRepositoryGroup>>versionWithInfo:
+	Receiver: a MCRepositoryGroup
+	Arguments and temporary variables: 
+		aVersionInfo: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+	Receiver's instance variables: 
+		repositories: 	an OrderedCollection(a MCSmalltalkhubRepository(http://smalltalkh...etc...
+		useCache: 	true
+
+
+MCVersionHistoryBrowser>>snapshotForInfo:
+	Receiver: a MCVersionHistoryBrowser
+	Arguments and temporary variables: 
+		aVersionInfo: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SystemWindow(1039921152) a PluggableListMorph(6...etc...
+		announceur: 	an Announcer
+		morph: 	a SystemWindow(1039921152)
+		label: 	nil
+		modal: 	false
+		modalValue: 	nil
+		ancestry: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+		index: 	2
+		package: 	nil
+		infos: 	an Array(a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766) a MCLazyVe...etc...
+
+
+MCVersionHistoryBrowser>>baseSnapshot
+	Receiver: a MCVersionHistoryBrowser
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SystemWindow(1039921152) a PluggableListMorph(6...etc...
+		announceur: 	an Announcer
+		morph: 	a SystemWindow(1039921152)
+		label: 	nil
+		modal: 	false
+		modalValue: 	nil
+		ancestry: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+		index: 	2
+		package: 	nil
+		infos: 	an Array(a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766) a MCLazyVe...etc...
+
+
+MCVersionHistoryBrowser>>viewChanges
+	Receiver: a MCVersionHistoryBrowser
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SystemWindow(1039921152) a PluggableListMorph(6...etc...
+		announceur: 	an Announcer
+		morph: 	a SystemWindow(1039921152)
+		label: 	nil
+		modal: 	false
+		modalValue: 	nil
+		ancestry: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+		index: 	2
+		package: 	nil
+		infos: 	an Array(a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766) a MCLazyVe...etc...
+
+
+MCVersionHistoryBrowser(Object)>>perform:orSendTo:
+	Receiver: a MCVersionHistoryBrowser
+	Arguments and temporary variables: 
+		selector: 	#viewChanges
+		otherTarget: 	a PluggableListMorph(695462656)
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SystemWindow(1039921152) a PluggableListMorph(6...etc...
+		announceur: 	an Announcer
+		morph: 	a SystemWindow(1039921152)
+		label: 	nil
+		modal: 	false
+		modalValue: 	nil
+		ancestry: 	a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766)
+		index: 	2
+		package: 	nil
+		infos: 	an Array(a MCLazyVersionInfo(Roassal2-YaroslavKormushyn.1766) a MCLazyVe...etc...
+
+
+[ | selArgCount |
+"show cursor in case item opens a new MVC window"
+(selArgCount := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ selArgCount = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: evt) ].
+		self showShortcut ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormushyn.1766'
+	Arguments and temporary variables: 
+		evt: 	[(530@299) mouseUp 163296056 nil]
+		w: 	a WorldMorph(562956288) [world]
+		selArgCount: 	2
+	Receiver's instance variables: 
+		bounds: 	(496.0@287.0) corner: (786.0@304.0)
+		owner: 	a MenuMorph(133243392)
+		submorphs: 	#()
+		fullBounds: 	(496.0@287.0) corner: (786.0@304.0)
+		color: 	Color black
+		extension: 	a MorphExtension (423001600)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'view changes -> Roassal2-YaroslavKormushyn.1766'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a MCVersionHistoryBrowser
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#viewChanges a PluggableListMorph(695462656))
+		icon: 	nil
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ | selArgCount |
+"show cursor in case item opens a new MVC window"
+(selArgCount := select...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ oldcursor show ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+		startpc: 	138
+		numArgs: 	0
+
+
+CursorWithMask(Cursor)>>showWhile:
+	Receiver: ((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r100000000000000000000...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ | selArgCount |
+"show cursor in case item opens a new MVC window"
+(se...etc...
+		oldcursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2...etc...
+	Receiver's instance variables: 
+		bits: 	a Bitmap of length 16
+		width: 	16
+		height: 	16
+		depth: 	1
+		offset: 	(-1@ -1)
+		maskForm: 	Form(16x16x1)
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormushyn.1766'
+	Arguments and temporary variables: 
+		evt: 	[(530@299) mouseUp 163296056 nil]
+		w: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(496.0@287.0) corner: (786.0@304.0)
+		owner: 	a MenuMorph(133243392)
+		submorphs: 	#()
+		fullBounds: 	(496.0@287.0) corner: (786.0@304.0)
+		color: 	Color black
+		extension: 	a MorphExtension (423001600)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'view changes -> Roassal2-YaroslavKormushyn.1766'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a MCVersionHistoryBrowser
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#viewChanges a PluggableListMorph(695462656))
+		icon: 	nil
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+	Receiver: a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormushyn.1766'
+	Arguments and temporary variables: 
+		evt: 	[(530@299) mouseUp 163296056 nil]
+	Receiver's instance variables: 
+		bounds: 	(496.0@287.0) corner: (786.0@304.0)
+		owner: 	a MenuMorph(133243392)
+		submorphs: 	#()
+		fullBounds: 	(496.0@287.0) corner: (786.0@304.0)
+		color: 	Color black
+		extension: 	a MorphExtension (423001600)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'view changes -> Roassal2-YaroslavKormushyn.1766'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a MCVersionHistoryBrowser
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#viewChanges a PluggableListMorph(695462656))
+		icon: 	nil
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+	Receiver: a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormushyn.1766'
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+	Receiver's instance variables: 
+		bounds: 	(496.0@287.0) corner: (786.0@304.0)
+		owner: 	a MenuMorph(133243392)
+		submorphs: 	#()
+		fullBounds: 	(496.0@287.0) corner: (786.0@304.0)
+		color: 	Color black
+		extension: 	a MorphExtension (423001600)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'view changes -> Roassal2-YaroslavKormushyn.1766'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a MCVersionHistoryBrowser
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#viewChanges a PluggableListMorph(695462656))
+		icon: 	nil
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(530@299) mouseUp 163296056 nil]
+	Arguments and temporary variables: 
+		anObject: 	a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKor...etc...
+	Receiver's instance variables: 
+		timeStamp: 	163296056
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(530@299)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+ToggleMenuItemMorph(Morph)>>handleEvent:
+	Receiver: a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormushyn.1766'
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+	Receiver's instance variables: 
+		bounds: 	(496.0@287.0) corner: (786.0@304.0)
+		owner: 	a MenuMorph(133243392)
+		submorphs: 	#()
+		fullBounds: 	(496.0@287.0) corner: (786.0@304.0)
+		color: 	Color black
+		extension: 	a MorphExtension (423001600)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'view changes -> Roassal2-YaroslavKormushyn.1766'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a MCVersionHistoryBrowser
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#viewChanges a PluggableListMorph(695462656))
+		icon: 	nil
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+MorphicEventDispatcher>>dispatchDefault:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		aMorph: 	a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormu...etc...
+		localEvt: 	nil
+		index: 	1
+		child: 	nil
+		morphs: 	#()
+		inside: 	true
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MorphicEventDispatcher>>handleMouseUp:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(530@299) mouseUp 163296056 nil]
+	Arguments and temporary variables: 
+		anObject: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	163296056
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(530@299)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		aMorph: 	a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormu...etc...
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ anEvent sentTo: self ]
+	Arguments and temporary variables: 
+		aBlock: 	[ morph := nil ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	28
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		aMorph: 	a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormu...etc...
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+	Receiver: a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormushyn.1766'
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(496.0@287.0) corner: (786.0@304.0)
+		owner: 	a MenuMorph(133243392)
+		submorphs: 	#()
+		fullBounds: 	(496.0@287.0) corner: (786.0@304.0)
+		color: 	Color black
+		extension: 	a MorphExtension (423001600)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'view changes -> Roassal2-YaroslavKormushyn.1766'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	a MCVersionHistoryBrowser
+		selector: 	#perform:orSendTo:
+		arguments: 	an Array(#viewChanges a PluggableListMorph(695462656))
+		icon: 	nil
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+MorphicEventDispatcher>>dispatchDefault:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		aMorph: 	a MenuMorph(133243392)
+		localEvt: 	[(530@299) mouseUp 163296056 nil]
+		index: 	1
+		child: 	a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-YaroslavKormus...etc...
+		morphs: 	an Array(a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-Yaro...etc...
+		inside: 	false
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MorphicEventDispatcher>>handleMouseUp:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(530@299) mouseUp 163296056 nil]
+	Arguments and temporary variables: 
+		anObject: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	163296056
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(530@299)
+		handler: 	nil
+		wasHandled: 	false
+		whichButton: 	4
+
+
+[ ^ anEvent sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		aMorph: 	a MenuMorph(133243392)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ anEvent sentTo: self ]
+	Arguments and temporary variables: 
+		aBlock: 	[ morph := nil ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	28
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		aMorph: 	a MenuMorph(133243392)
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MenuMorph(Morph)>>processEvent:using:
+	Receiver: a MenuMorph(133243392)
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		defaultDispatcher: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(491.0@282.0) corner: (791.0@327.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-Y...etc...
+		fullBounds: 	(491.0@282.0) corner: (791.0@327.0)
+		color: 	(Color r: 0.894 g: 0.894 b: 0.894 alpha: 1.0)
+		extension: 	a MorphExtension (250355200) [other:  (basicColor -> (Color r: 0.823...etc...
+		borderWidth: 	2
+		borderColor: 	(Color r: 0.674 g: 0.674 b: 0.674 alpha: 1.0)
+		defaultTarget: 	a MCVersionHistoryBrowser
+		selectedItem: 	a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-Yarosla...etc...
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph(Morph)>>processEvent:
+	Receiver: a MenuMorph(133243392)
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+	Receiver's instance variables: 
+		bounds: 	(491.0@282.0) corner: (791.0@327.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-Y...etc...
+		fullBounds: 	(491.0@282.0) corner: (791.0@327.0)
+		color: 	(Color r: 0.894 g: 0.894 b: 0.894 alpha: 1.0)
+		extension: 	a MorphExtension (250355200) [other:  (basicColor -> (Color r: 0.823...etc...
+		borderWidth: 	2
+		borderColor: 	(Color r: 0.674 g: 0.674 b: 0.674 alpha: 1.0)
+		defaultTarget: 	a MCVersionHistoryBrowser
+		selectedItem: 	a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-Yarosla...etc...
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+MenuMorph>>handleFocusEvent:
+	Receiver: a MenuMorph(133243392)
+	Arguments and temporary variables: 
+		evt: 	[(530@299) mouseUp 163296056 nil]
+	Receiver's instance variables: 
+		bounds: 	(491.0@282.0) corner: (791.0@327.0)
+		owner: 	nil
+		submorphs: 	an Array(a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-Y...etc...
+		fullBounds: 	(491.0@282.0) corner: (791.0@327.0)
+		color: 	(Color r: 0.894 g: 0.894 b: 0.894 alpha: 1.0)
+		extension: 	a MorphExtension (250355200) [other:  (basicColor -> (Color r: 0.823...etc...
+		borderWidth: 	2
+		borderColor: 	(Color r: 0.674 g: 0.674 b: 0.674 alpha: 1.0)
+		defaultTarget: 	a MCVersionHistoryBrowser
+		selectedItem: 	a ToggleMenuItemMorph(452822784)'view changes -> Roassal2-Yarosla...etc...
+		stayUp: 	false
+		popUpOwner: 	nil
+		activeSubMenu: 	nil
+		titleMorph: 	nil
+
+
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+	Receiver: a HandMorph(58125568)
+	Arguments and temporary variables: 
+		anEvent: 	[(530@299) mouseUp 163296056 nil]
+		focusHolder: 	a MenuMorph(133243392)
+		aBlock: 	[ self mouseFocus: nil ]
+		w: 	a WorldMorph(562956288) [world]
+		result: 	nil
+	Receiver's instance variables: 
+		bounds: 	(1319@799.0) corner: (1335@815.0)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	nil
+		color: 	Color blue
+		extension: 	a MorphExtension (473083392)
+		mouseFocus: 	nil
+		keyboardFocus: 	nil
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	nil
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(1319@799) mouseOver 163308306 nil]
+		targetOffset: 	(34.0@12.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 163308306 685 394 0 0 0 1)
+		lastKeyScanCode: 	18
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+BlockClosure>>on:do:
+	Receiver: [ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (an...etc...
+	Arguments and temporary variables: 
+		exception: 	Error
+		handlerAction: 	[ :ex | 
+ActiveWorld := priorWorld.
+ActiveEvent := priorEvent.
+A...etc...
+	Receiver's instance variables: 
+		outerContext: 	HandMorph>>sendFocusEvent:to:clear:
+		startpc: 	67
+		numArgs: 	0
+
+
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named C:\Users\kormu\AppData\Local\PharoLauncher\PharoV60.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+23 March 2019 10:28:02.630978 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+VM: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Sat Jan 5 20:00:11 2019 CommitHash: 7a3c6b6 Plugins: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60540]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\kormu\AppData\Local\...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named C:\Users\kormu\AppData\Local\...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named C:\Users\kormu\AppData\Local\PharoLauncher\PharoV...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'C:\Users\kormu\AppData\Local\PharoLauncher\PharoV60.sources'
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	nil
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+SmalltalkImage class>>startUp:
+	Receiver: SmalltalkImage
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(size 205)
+		format: 	65541
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SmalltalkImage
+		classPool: 	a Dictionary(#CompilerClass->OpalCompiler #LastImagePath->'C:\Users\...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Support'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SmalltalkImage)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SmalltalkImage
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-23T22:28:02.574978+02:00
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-23T22:28:02.574978+02:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	41
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-23T22:28:02.574978+02:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-23T22:28:02.574978+02:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-23T22:28:02.574978+02:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2019-03-23T22:28:02.574978+02:00
+
+
+SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+CurrentExecutionEnvironment class>>activate:for:
+	Receiver: CurrentExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	a DefaultExecutionEnvironment
+		arg2: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		superclass: 	ProcessLocalVariable
+		methodDict: 	a MethodDictionary(#default->CurrentExecutionEnvironment>>#default ...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CurrentExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		soleInstance: 	a CurrentExecutionEnvironment
+
+
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+	Receiver: a DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+a DefaultExecutionEnvironment
+
+DefaultExecutionEnvironment class>>beActiveDuring:
+	Receiver: DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+		superclass: 	ExecutionEnvironment
+		methodDict: 	a MethodDictionary(#prepareForNewProcess:->DefaultExecutionEnvironm...etc...
+		format: 	0
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#DefaultExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		instance: 	a DefaultExecutionEnvironment
+
+
+SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+[ Smalltalk snapshot: true andQuit: true ] in WorldState class>>saveAndQuit
+	Receiver: WorldState
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#activeHand->WorldState>>#activeHand #activeHand...etc...
+		format: 	65548
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldState. OSWindowWorldState}
+		name: 	#WorldState
+		classPool: 	a Dictionary(#CanSurrenderToOS->true #DebugShowDamage->false #Deferr...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ Smalltalk snapshot: true andQuit: true ]
+	Arguments and temporary variables: 
+		arg1: 	[ tmp1 show ]
+		tmp1: 	nil
+		tmp2: 	nil
+	Receiver's instance variables: 
+		outerContext: 	WorldState class>>saveAndQuit
+		startpc: 	39
+		numArgs: 	0
+
+
+CursorWithMask(Cursor)>>showWhile:
+	Receiver: ((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r11000000000000000000
+...etc...
+	Arguments and temporary variables: 
+		arg1: 	[ Smalltalk snapshot: true andQuit: true ]
+		tmp1: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r1000...etc...
+	Receiver's instance variables: 
+		bits: 	a Bitmap of length 16
+		width: 	16
+		height: 	16
+		depth: 	1
+		offset: 	(-1@ -1)
+		maskForm: 	Form(16x16x1)
+
+
+WorldState class>>saveAndQuit
+	Receiver: WorldState
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#activeHand->WorldState>>#activeHand #activeHand...etc...
+		format: 	65548
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldState. OSWindowWorldState}
+		name: 	#WorldState
+		classPool: 	a Dictionary(#CanSurrenderToOS->true #DebugShowDamage->false #Deferr...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+[ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ tmp2 = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: arg1) ].
+		self showShortcut ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(506631936)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(155@569) mouseUp 87873687 nil]
+		tmp1: 	a WorldMorph(562956288) [world]
+		tmp2: 	0
+	Receiver's instance variables: 
+		bounds: 	(21.0@563.0) corner: (230.0@581.0)
+		owner: 	a MenuMorph(230888704)
+		submorphs: 	#()
+		fullBounds: 	(21.0@563.0) corner: (230.0@581.0)
+		color: 	Color black
+		extension: 	a MorphExtension (138831616)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: ...etc...
+	Arguments and temporary variables: 
+		arg1: 	[ tmp1 show ]
+		tmp1: 	nil
+		tmp2: 	nil
+	Receiver's instance variables: 
+		outerContext: 	ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+		startpc: 	138
+		numArgs: 	0
+
+
+CursorWithMask(Cursor)>>showWhile:
+	Receiver: ((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r100000000000000000000...etc...
+	Arguments and temporary variables: 
+		arg1: 	[ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: sele...etc...
+		tmp1: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0
+		2r1000...etc...
+	Receiver's instance variables: 
+		bits: 	a Bitmap of length 16
+		width: 	16
+		height: 	16
+		depth: 	1
+		offset: 	(-1@ -1)
+		maskForm: 	Form(16x16x1)
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+	Receiver: a ToggleMenuItemMorph(506631936)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(155@569) mouseUp 87873687 nil]
+		tmp1: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		bounds: 	(21.0@563.0) corner: (230.0@581.0)
+		owner: 	a MenuMorph(230888704)
+		submorphs: 	#()
+		fullBounds: 	(21.0@563.0) corner: (230.0@581.0)
+		color: 	Color black
+		extension: 	a MorphExtension (138831616)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+	Receiver: a ToggleMenuItemMorph(506631936)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(155@569) mouseUp 87873687 nil]
+	Receiver's instance variables: 
+		bounds: 	(21.0@563.0) corner: (230.0@581.0)
+		owner: 	a MenuMorph(230888704)
+		submorphs: 	#()
+		fullBounds: 	(21.0@563.0) corner: (230.0@581.0)
+		color: 	Color black
+		extension: 	a MorphExtension (138831616)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+	Receiver: a ToggleMenuItemMorph(506631936)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(155@569) mouseUp 87873687 nil]
+	Receiver's instance variables: 
+		bounds: 	(21.0@563.0) corner: (230.0@581.0)
+		owner: 	a MenuMorph(230888704)
+		submorphs: 	#()
+		fullBounds: 	(21.0@563.0) corner: (230.0@581.0)
+		color: 	Color black
+		extension: 	a MorphExtension (138831616)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(155@569) mouseUp 87873687 nil]
+	Arguments and temporary variables: 
+		arg1: 	a ToggleMenuItemMorph(506631936)'Save and quit'
+	Receiver's instance variables: 
+		timeStamp: 	87873687
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(155@569)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+ToggleMenuItemMorph(Morph)>>handleEvent:
+	Receiver: a ToggleMenuItemMorph(506631936)'Save and quit'
+	Arguments and temporary variables: 
+		arg1: 	[(155@569) mouseUp 87873687 nil]
+	Receiver's instance variables: 
+		bounds: 	(21.0@563.0) corner: (230.0@581.0)
+		owner: 	a MenuMorph(230888704)
+		submorphs: 	#()
+		fullBounds: 	(21.0@563.0) corner: (230.0@581.0)
+		color: 	Color black
+		extension: 	a MorphExtension (138831616)
+		font: 	a LogicalFont
+ familyName: Source Sans Pro
+ emphasis: nil
+ pointSize: 10
+...etc...
+		emphasis: 	0
+		contents: 	'Save and quit'
+		hasFocus: 	false
+		backgroundColor: 	Color transparent
+		isEnabled: 	true
+		subMenu: 	nil
+		isSelected: 	false
+		target: 	WorldState
+		selector: 	#saveAndQuit
+		arguments: 	nil
+		icon: 	Form(16x16x32)
+		getStateSelector: 	nil
+		enablementSelector: 	nil
+		keyText: 	nil
+
+
+MorphicEventDispatcher>>dispatchDefault:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[(155@569) mouseUp 87873687 nil]
+		arg2: 	a ToggleMenuItemMorph(506631936)'Save and quit'
+		tmp1: 	nil
+		tmp2: 	1
+		tmp3: 	nil
+		tmp4: 	#()
+		tmp5: 	true
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(506631936)'Save and quit'
+
+
+MorphicEventDispatcher>>handleMouseUp:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[(155@569) mouseUp 87873687 nil]
+	Receiver's instance variables: 
+		morph: 	a ToggleMenuItemMorph(506631936)'Save and quit'
+
+
+MouseButtonEvent>>sentTo:
+	Receiver: [(155@569) mouseUp 87873687 nil]
+	Arguments and temporary variables: 
+		arg1: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	87873687
+		source: 	a HandMorph(58125568)
+		windowIndex: 	nil
+		type: 	#mouseUp
+		buttons: 	0
+		position: 	(155@569)
+		handler: 	nil
+		wasHandled: 	true
+		whichButton: 	4
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SmalltalkImage class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+[ Smalltalk snapshot: true andQuit: true ] in WorldState class>>saveAndQuit
+BlockClosure>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+WorldState class>>saveAndQuit
+[ | tmp2 |
+(tmp2 := selector numArgs) = 0
+	ifTrue: [ target perform: selector ]
+	ifFalse: [ tmp2 = arguments size
+			ifTrue: [ target perform: selector withArguments: arguments ]
+			ifFalse: [ target perform: selector withArguments: (arguments copyWith: arg1) ].
+		self showShortcut ].
+self changed ] in ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+BlockClosure>>ensure:
+CursorWithMask(Cursor)>>showWhile:
+ToggleMenuItemMorph(MenuItemMorph)>>invokeWithEvent:
+ToggleMenuItemMorph(MenuItemMorph)>>mouseUp:
+ToggleMenuItemMorph(MenuItemMorph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ToggleMenuItemMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+ToggleMenuItemMorph(Morph)>>processEvent:using:
+MorphicEventDispatcher>>dispatchDefault:with:
+MorphicEventDispatcher>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+MenuMorph(Morph)>>processEvent:using:
+MenuMorph(Morph)>>processEvent:
+MenuMorph>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := arg1.
+tmp3 := arg2
+	handleFocusEvent: (arg1 transformedBy: (arg2 transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :arg2 | 
+self activeHand: arg2.
+arg2 processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+KeyNotFound: key #aFormat not found in Dictionary
+23 March 2019 10:52:36.898978 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+VM: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Sat Jan 5 20:00:11 2019 CommitHash: 7a3c6b6 Plugins: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60540]
+
+Dictionary>>errorKeyNotFound:
+	Receiver: a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+	Receiver's instance variables: 
+		tally: 	5
+		array: 	{#arg3->3. #arg1->1. #result->4. nil. #tmpResult->5. nil. #arg2->2. nil....etc...
+
+
+[ self errorKeyNotFound: arg1 ] in Dictionary>>at:
+	Receiver: a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+	Receiver's instance variables: 
+		tally: 	5
+		array: 	{#arg3->3. #arg1->1. #result->4. nil. #tmpResult->5. nil. #arg2->2. nil....etc...
+
+
+Dictionary>>at:ifAbsent:
+	Receiver: a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+		arg2: 	[ self errorKeyNotFound: arg1 ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		tally: 	5
+		array: 	{#arg3->3. #arg1->1. #result->4. nil. #tmpResult->5. nil. #arg2->2. nil....etc...
+
+
+Dictionary>>at:
+	Receiver: a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+	Receiver's instance variables: 
+		tally: 	5
+		array: 	{#arg3->3. #arg1->1. #result->4. nil. #tmpResult->5. nil. #arg2->2. nil....etc...
+
+
+IRMethod>>indexForVarNamed:
+	Receiver: an IRMethod
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+	Receiver's instance variables: 
+		sourceNode: 	nil
+		startSequence: 	an IRSequence (1)
+		numArgs: 	3
+		properties: 	nil
+		tempMap: 	a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+		pragmas: 	an OrderedCollection()
+		additionalLiterals: 	an OCLiteralSet()
+		compiledMethod: 	nil
+		compilationContext: 	a CompilationContext
+		irPrimitive: 	primitive 0
+
+
+IRTranslatorV2>>visitPushTemp:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	pushTemp: #aFormat
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRPushTemp>>accept:
+	Receiver: pushTemp: #aFormat
+	Arguments and temporary variables: 
+		arg1: 	an IRTranslatorV2
+	Receiver's instance variables: 
+		sourceNode: 	nil
+		bytecodeIndex: 	nil
+		sequence: 	an IRSequence (1)
+		name: 	#aFormat
+
+
+IRTranslatorV2(IRVisitor)>>visitNode:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	pushTemp: #aFormat
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRTranslatorV2>>visitInstruction:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	pushTemp: #aFormat
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+[ :arg2 | self visitInstruction: arg2 ] in IRTranslatorV2(IRVisitor)>>visitSequence:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRSequence (1)
+		arg2: 	pushTemp: #aFormat
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(pushLiteral: <apicall: void* 'cairo_image_surface_create' (long long ...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		array: 	an Array(pushLiteral: <apicall: void* 'cairo_image_surface_create' (long...etc...
+		firstIndex: 	1
+		lastIndex: 	17
+
+
+IRSequence>>do:
+	Receiver: an IRSequence (1)
+	Arguments and temporary variables: 
+		arg1: 	[ :arg2 | self visitInstruction: arg2 ]
+	Receiver's instance variables: 
+		sequence: 	an OrderedCollection(pushLiteral: <apicall: void* 'cairo_image_surfac...etc...
+		orderNumber: 	1
+		method: 	an IRMethod
+
+
+IRTranslatorV2(IRVisitor)>>visitSequence:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRSequence (1)
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRTranslatorV2>>visitSequence:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRSequence (1)
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRSequence>>accept:
+	Receiver: an IRSequence (1)
+	Arguments and temporary variables: 
+		arg1: 	an IRTranslatorV2
+	Receiver's instance variables: 
+		sequence: 	an OrderedCollection(pushLiteral: <apicall: void* 'cairo_image_surfac...etc...
+		orderNumber: 	1
+		method: 	an IRMethod
+
+
+IRTranslatorV2(IRVisitor)>>visitNode:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRSequence (1)
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+[ :arg2 | self visitNode: arg2 ] in IRTranslatorV2(IRVisitor)>>visitNodes:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	a SortedCollection(an IRSequence (1))
+		arg2: 	an IRSequence (1)
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+SortedCollection(OrderedCollection)>>do:
+	Receiver: a SortedCollection(an IRSequence (1))
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		array: 	an Array(an IRSequence (1))
+		firstIndex: 	1
+		lastIndex: 	1
+		sortBlock: 	[ :arg2 :arg3 | arg2 orderNumber <= arg3 orderNumber ]
+
+
+IRTranslatorV2(IRVisitor)>>visitNodes:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	a SortedCollection(an IRSequence (1))
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRTranslatorV2>>visitSequences:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	a SortedCollection(an IRSequence (1))
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRTranslatorV2>>visitMethod:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRMethod
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRMethod>>accept:
+	Receiver: an IRMethod
+	Arguments and temporary variables: 
+		arg1: 	an IRTranslatorV2
+	Receiver's instance variables: 
+		sourceNode: 	nil
+		startSequence: 	an IRSequence (1)
+		numArgs: 	3
+		properties: 	nil
+		tempMap: 	a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+		pragmas: 	an OrderedCollection()
+		additionalLiterals: 	an OCLiteralSet()
+		compiledMethod: 	nil
+		compilationContext: 	a CompilationContext
+		irPrimitive: 	primitive 0
+
+
+IRTranslatorV2(IRVisitor)>>visitNode:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRMethod
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRMethod>>generate:
+	Receiver: an IRMethod
+	Arguments and temporary variables: 
+		arg1: 	a CompiledMethodTrailer
+		tmp1: 	an IRTranslatorV2
+	Receiver's instance variables: 
+		sourceNode: 	nil
+		startSequence: 	an IRSequence (1)
+		numArgs: 	3
+		properties: 	nil
+		tempMap: 	a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+		pragmas: 	an OrderedCollection()
+		additionalLiterals: 	an OCLiteralSet()
+		compiledMethod: 	nil
+		compilationContext: 	a CompilationContext
+		irPrimitive: 	primitive 0
+
+
+FFICalloutMethodBuilder>>generateMethodFromSpec:
+	Receiver: a FFICalloutMethodBuilder
+	Arguments and temporary variables: 
+		arg1: 	a FFIFunctionSpec
+		tmp1: 	an IRMethod
+	Receiver's instance variables: 
+		calloutAPI: 	a FFICalloutAPI
+		requestor: 	a FFICallout
+		sender: 	AthensCairoSurface class>>primImage:width:height:
+		signature: 	#(#AthensCairoSurface #cairo_image_surface_create #(#int #aFormat #,...etc...
+		module: 	CairoLibrary
+		functionResolutionStrategies: 	an OrderedCollection(a FFICallbackFunctionResolut...etc...
+
+
+FFICalloutMethodBuilder>>generate
+	Receiver: a FFICalloutMethodBuilder
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		calloutAPI: 	a FFICalloutAPI
+		requestor: 	a FFICallout
+		sender: 	AthensCairoSurface class>>primImage:width:height:
+		signature: 	#(#AthensCairoSurface #cairo_image_surface_create #(#int #aFormat #,...etc...
+		module: 	CairoLibrary
+		functionResolutionStrategies: 	an OrderedCollection(a FFICallbackFunctionResolut...etc...
+
+
+FFICalloutMethodBuilder>>build:
+	Receiver: a FFICalloutMethodBuilder
+	Arguments and temporary variables: 
+		arg1: 	[ :arg3 | 
+| tmp6 |
+tmp6 := arg3.
+tmp6
+	signature: arg1;
+	sender: tmp1;
+	...etc...
+	Receiver's instance variables: 
+		calloutAPI: 	a FFICalloutAPI
+		requestor: 	a FFICallout
+		sender: 	AthensCairoSurface class>>primImage:width:height:
+		signature: 	#(#AthensCairoSurface #cairo_image_surface_create #(#int #aFormat #,...etc...
+		module: 	CairoLibrary
+		functionResolutionStrategies: 	an OrderedCollection(a FFICallbackFunctionResolut...etc...
+
+
+FFICalloutAPI>>function:module:
+	Receiver: a FFICalloutAPI
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		context: 	AthensCairoSurface class>>primImage:width:height:
+		options: 	#()
+		callingConvention: 	#stdcall
+
+
+AthensCairoSurface class(Object)>>nbCall:
+	Receiver: AthensCairoSurface
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		superclass: 	AthensSurface
+		methodDict: 	a MethodDictionary(#asAthensPaintOn:->AthensCairoSurface>>#asAthens...etc...
+		format: 	65543
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensCairoPDFSurface. AthensQuartzSurface. AthensCairoSDLSurface}...etc...
+		name: 	#AthensCairoSurface
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(AthensCairoDefs)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Athens-Cairo'
+		traitComposition: 	TCairoLibrary
+		localSelectors: 	a Set(#createStrokePaintFor: #stride #writeToPng: #height #load...etc...
+		session: 	a WorkingSession
+		dispatch: 	@ 16r00000000
+		dispatchStruct: 	<<error during printing>>
+
+AthensCairoSurface class>>primImage:width:height:
+	Receiver: AthensCairoSurface
+	Arguments and temporary variables: 
+		arg1: 	0
+		arg2: 	500
+		arg3: 	501
+	Receiver's instance variables: 
+		superclass: 	AthensSurface
+		methodDict: 	a MethodDictionary(#asAthensPaintOn:->AthensCairoSurface>>#asAthens...etc...
+		format: 	65543
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensCairoPDFSurface. AthensQuartzSurface. AthensCairoSDLSurface}...etc...
+		name: 	#AthensCairoSurface
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(AthensCairoDefs)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Athens-Cairo'
+		traitComposition: 	TCairoLibrary
+		localSelectors: 	a Set(#createStrokePaintFor: #stride #writeToPng: #height #load...etc...
+		session: 	a WorkingSession
+		dispatch: 	@ 16r00000000
+		dispatchStruct: 	<<error during printing>>
+
+AthensCairoSurface class>>extent:format:
+	Receiver: AthensCairoSurface
+	Arguments and temporary variables: 
+		arg1: 	(500@500)
+		arg2: 	0
+	Receiver's instance variables: 
+		superclass: 	AthensSurface
+		methodDict: 	a MethodDictionary(#asAthensPaintOn:->AthensCairoSurface>>#asAthens...etc...
+		format: 	65543
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensCairoPDFSurface. AthensQuartzSurface. AthensCairoSDLSurface}...etc...
+		name: 	#AthensCairoSurface
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(AthensCairoDefs)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Athens-Cairo'
+		traitComposition: 	TCairoLibrary
+		localSelectors: 	a Set(#createStrokePaintFor: #stride #writeToPng: #height #load...etc...
+		session: 	a WorkingSession
+		dispatch: 	@ 16r00000000
+		dispatchStruct: 	<<error during printing>>
+
+AthensCairoSurface class>>extent:
+	Receiver: AthensCairoSurface
+	Arguments and temporary variables: 
+		arg1: 	(500@500)
+	Receiver's instance variables: 
+		superclass: 	AthensSurface
+		methodDict: 	a MethodDictionary(#asAthensPaintOn:->AthensCairoSurface>>#asAthens...etc...
+		format: 	65543
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensCairoPDFSurface. AthensQuartzSurface. AthensCairoSDLSurface}...etc...
+		name: 	#AthensCairoSurface
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(AthensCairoDefs)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Athens-Cairo'
+		traitComposition: 	TCairoLibrary
+		localSelectors: 	a Set(#createStrokePaintFor: #stride #writeToPng: #height #load...etc...
+		session: 	a WorkingSession
+		dispatch: 	@ 16r00000000
+		dispatchStruct: 	<<error during printing>>
+
+TRCanvas>>initialize
+	Receiver: a TRCanvas
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		callbacks: 	nil
+		canvas: 	nil
+		shapes: 	nil
+		fixedShapes: 	nil
+		extent: 	(500@500)
+		animations: 	nil
+		morph: 	nil
+		camera: 	nil
+		announcer: 	nil
+		color: 	nil
+		session: 	nil
+		eventOverseer: 	nil
+		theme: 	nil
+		clearBackground: 	nil
+
+
+TRCanvas class(Behavior)>>new
+	Receiver: TRCanvas
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	TRCallableObject
+		methodDict: 	a MethodDictionary(#accept:->TRCanvas>>#accept: #addAnimation:->TRC...etc...
+		format: 	65550
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#TRCanvas
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Trachel-Core'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+RTView>>initialize
+	Receiver: a RTView
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		announcer: 	nil
+		attributes: 	nil
+		elements: 	a RTGroup()
+		edges: 	a RTGroup()
+		trCanvas: 	nil
+
+
+RTView class(Behavior)>>new
+	Receiver: RTView
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	RTAnnounceableObject
+		methodDict: 	a MethodDictionary(#accept:->RTView>>#accept: #add:->RTView>>#add: ...etc...
+		format: 	65541
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{RTViewForSpec}
+		name: 	#RTView
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Roassal2-Core'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+[ RTView new ] in GLMRoassal2Presentation>>initialize
+	Receiver: a GLMRoassal2Presentation(id=866041600 title=Examples pane=a GLMPane(992091392 2))
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(992091392 2)
+		title: 	'Examples'
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ self gtExamples notEmpty ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	nil
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		stepCondition: 	nil
+		wantsAutomaticRefresh: 	nil
+		painting: 	nil
+		paintingBlock: 	[ :arg3 | 
+arg3 @ RTDraggableView.
+self gtOpenOn: arg3 ]
+		view: 	nil
+		shouldPopulateSelection: 	true
+		newViewBlock: 	[ RTView new ]
+
+
+GLMRoassal2Presentation>>view
+	Receiver: a GLMRoassal2Presentation(id=866041600 title=Examples pane=a GLMPane(992091392 2))
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(992091392 2)
+		title: 	'Examples'
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ self gtExamples notEmpty ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	nil
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		stepCondition: 	nil
+		wantsAutomaticRefresh: 	nil
+		painting: 	nil
+		paintingBlock: 	[ :arg3 | 
+arg3 @ RTDraggableView.
+self gtOpenOn: arg3 ]
+		view: 	nil
+		shouldPopulateSelection: 	true
+		newViewBlock: 	[ RTView new ]
+
+
+GLMMorphicRoassal2Renderer>>render:
+	Receiver: a GLMMorphicRoassal2Renderer
+	Arguments and temporary variables: 
+THERE_BE_DRAGONS_HERE
+KeyNotFound: key #aFormat not found in Dictionary
+23 March 2019 10:52:37.889978 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2504 uuid: a00b0fad-c04c-47a6-8a11-5dbff110ac11 Jan  5 2019
+VM: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Sat Jan 5 20:00:11 2019 CommitHash: 7a3c6b6 Plugins: 201901051900 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60540]
+
+Dictionary>>errorKeyNotFound:
+	Receiver: a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+	Receiver's instance variables: 
+		tally: 	5
+		array: 	{#arg3->3. #arg1->1. #result->4. nil. #tmpResult->5. nil. #arg2->2. nil....etc...
+
+
+[ self errorKeyNotFound: arg1 ] in Dictionary>>at:
+	Receiver: a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+	Receiver's instance variables: 
+		tally: 	5
+		array: 	{#arg3->3. #arg1->1. #result->4. nil. #tmpResult->5. nil. #arg2->2. nil....etc...
+
+
+Dictionary>>at:ifAbsent:
+	Receiver: a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+		arg2: 	[ self errorKeyNotFound: arg1 ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		tally: 	5
+		array: 	{#arg3->3. #arg1->1. #result->4. nil. #tmpResult->5. nil. #arg2->2. nil....etc...
+
+
+Dictionary>>at:
+	Receiver: a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+	Receiver's instance variables: 
+		tally: 	5
+		array: 	{#arg3->3. #arg1->1. #result->4. nil. #tmpResult->5. nil. #arg2->2. nil....etc...
+
+
+IRMethod>>indexForVarNamed:
+	Receiver: an IRMethod
+	Arguments and temporary variables: 
+		arg1: 	#aFormat
+	Receiver's instance variables: 
+		sourceNode: 	nil
+		startSequence: 	an IRSequence (1)
+		numArgs: 	3
+		properties: 	nil
+		tempMap: 	a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+		pragmas: 	an OrderedCollection()
+		additionalLiterals: 	an OCLiteralSet()
+		compiledMethod: 	nil
+		compilationContext: 	a CompilationContext
+		irPrimitive: 	primitive 0
+
+
+IRTranslatorV2>>visitPushTemp:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	pushTemp: #aFormat
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRPushTemp>>accept:
+	Receiver: pushTemp: #aFormat
+	Arguments and temporary variables: 
+		arg1: 	an IRTranslatorV2
+	Receiver's instance variables: 
+		sourceNode: 	nil
+		bytecodeIndex: 	nil
+		sequence: 	an IRSequence (1)
+		name: 	#aFormat
+
+
+IRTranslatorV2(IRVisitor)>>visitNode:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	pushTemp: #aFormat
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRTranslatorV2>>visitInstruction:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	pushTemp: #aFormat
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+[ :arg2 | self visitInstruction: arg2 ] in IRTranslatorV2(IRVisitor)>>visitSequence:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRSequence (1)
+		arg2: 	pushTemp: #aFormat
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(pushLiteral: <apicall: void* 'cairo_image_surface_create' (long long ...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		array: 	an Array(pushLiteral: <apicall: void* 'cairo_image_surface_create' (long...etc...
+		firstIndex: 	1
+		lastIndex: 	17
+
+
+IRSequence>>do:
+	Receiver: an IRSequence (1)
+	Arguments and temporary variables: 
+		arg1: 	[ :arg2 | self visitInstruction: arg2 ]
+	Receiver's instance variables: 
+		sequence: 	an OrderedCollection(pushLiteral: <apicall: void* 'cairo_image_surfac...etc...
+		orderNumber: 	1
+		method: 	an IRMethod
+
+
+IRTranslatorV2(IRVisitor)>>visitSequence:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRSequence (1)
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRTranslatorV2>>visitSequence:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRSequence (1)
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRSequence>>accept:
+	Receiver: an IRSequence (1)
+	Arguments and temporary variables: 
+		arg1: 	an IRTranslatorV2
+	Receiver's instance variables: 
+		sequence: 	an OrderedCollection(pushLiteral: <apicall: void* 'cairo_image_surfac...etc...
+		orderNumber: 	1
+		method: 	an IRMethod
+
+
+IRTranslatorV2(IRVisitor)>>visitNode:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRSequence (1)
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+[ :arg2 | self visitNode: arg2 ] in IRTranslatorV2(IRVisitor)>>visitNodes:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	a SortedCollection(an IRSequence (1))
+		arg2: 	an IRSequence (1)
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+SortedCollection(OrderedCollection)>>do:
+	Receiver: a SortedCollection(an IRSequence (1))
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		array: 	an Array(an IRSequence (1))
+		firstIndex: 	1
+		lastIndex: 	1
+		sortBlock: 	[ :arg2 :arg3 | arg2 orderNumber <= arg3 orderNumber ]
+
+
+IRTranslatorV2(IRVisitor)>>visitNodes:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	a SortedCollection(an IRSequence (1))
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRTranslatorV2>>visitSequences:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	a SortedCollection(an IRSequence (1))
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRTranslatorV2>>visitMethod:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRMethod
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRMethod>>accept:
+	Receiver: an IRMethod
+	Arguments and temporary variables: 
+		arg1: 	an IRTranslatorV2
+	Receiver's instance variables: 
+		sourceNode: 	nil
+		startSequence: 	an IRSequence (1)
+		numArgs: 	3
+		properties: 	nil
+		tempMap: 	a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+		pragmas: 	an OrderedCollection()
+		additionalLiterals: 	an OCLiteralSet()
+		compiledMethod: 	nil
+		compilationContext: 	a CompilationContext
+		irPrimitive: 	primitive 0
+
+
+IRTranslatorV2(IRVisitor)>>visitNode:
+	Receiver: an IRTranslatorV2
+	Arguments and temporary variables: 
+		arg1: 	an IRMethod
+	Receiver's instance variables: 
+		gen: 	an IRBytecodeGenerator
+		currentScope: 	a Stack(an IRMethod)
+		trailer: 	a CompiledMethodTrailer
+		tempVectorStack: 	a Stack()
+		compilationContext: 	a CompilationContext
+
+
+IRMethod>>generate:
+	Receiver: an IRMethod
+	Arguments and temporary variables: 
+		arg1: 	a CompiledMethodTrailer
+		tmp1: 	an IRTranslatorV2
+	Receiver's instance variables: 
+		sourceNode: 	nil
+		startSequence: 	an IRSequence (1)
+		numArgs: 	3
+		properties: 	nil
+		tempMap: 	a Dictionary(#arg1->1 #arg2->2 #arg3->3 #result->4 #tmpResult->5 )
+		pragmas: 	an OrderedCollection()
+		additionalLiterals: 	an OCLiteralSet()
+		compiledMethod: 	nil
+		compilationContext: 	a CompilationContext
+		irPrimitive: 	primitive 0
+
+
+FFICalloutMethodBuilder>>generateMethodFromSpec:
+	Receiver: a FFICalloutMethodBuilder
+	Arguments and temporary variables: 
+		arg1: 	a FFIFunctionSpec
+		tmp1: 	an IRMethod
+	Receiver's instance variables: 
+		calloutAPI: 	a FFICalloutAPI
+		requestor: 	a FFICallout
+		sender: 	AthensCairoSurface class>>primImage:width:height:
+		signature: 	#(#AthensCairoSurface #cairo_image_surface_create #(#int #aFormat #,...etc...
+		module: 	CairoLibrary
+		functionResolutionStrategies: 	an OrderedCollection(a FFICallbackFunctionResolut...etc...
+
+
+FFICalloutMethodBuilder>>generate
+	Receiver: a FFICalloutMethodBuilder
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		calloutAPI: 	a FFICalloutAPI
+		requestor: 	a FFICallout
+		sender: 	AthensCairoSurface class>>primImage:width:height:
+		signature: 	#(#AthensCairoSurface #cairo_image_surface_create #(#int #aFormat #,...etc...
+		module: 	CairoLibrary
+		functionResolutionStrategies: 	an OrderedCollection(a FFICallbackFunctionResolut...etc...
+
+
+FFICalloutMethodBuilder>>build:
+	Receiver: a FFICalloutMethodBuilder
+	Arguments and temporary variables: 
+		arg1: 	[ :arg3 | 
+| tmp6 |
+tmp6 := arg3.
+tmp6
+	signature: arg1;
+	sender: tmp1;
+	...etc...
+	Receiver's instance variables: 
+		calloutAPI: 	a FFICalloutAPI
+		requestor: 	a FFICallout
+		sender: 	AthensCairoSurface class>>primImage:width:height:
+		signature: 	#(#AthensCairoSurface #cairo_image_surface_create #(#int #aFormat #,...etc...
+		module: 	CairoLibrary
+		functionResolutionStrategies: 	an OrderedCollection(a FFICallbackFunctionResolut...etc...
+
+
+FFICalloutAPI>>function:module:
+	Receiver: a FFICalloutAPI
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		context: 	AthensCairoSurface class>>primImage:width:height:
+		options: 	#()
+		callingConvention: 	#stdcall
+
+
+AthensCairoSurface class(Object)>>nbCall:
+	Receiver: AthensCairoSurface
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		superclass: 	AthensSurface
+		methodDict: 	a MethodDictionary(#asAthensPaintOn:->AthensCairoSurface>>#asAthens...etc...
+		format: 	65543
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensCairoPDFSurface. AthensQuartzSurface. AthensCairoSDLSurface}...etc...
+		name: 	#AthensCairoSurface
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(AthensCairoDefs)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Athens-Cairo'
+		traitComposition: 	TCairoLibrary
+		localSelectors: 	a Set(#createStrokePaintFor: #stride #writeToPng: #height #load...etc...
+		session: 	a WorkingSession
+		dispatch: 	@ 16r00000000
+		dispatchStruct: 	<<error during printing>>
+
+AthensCairoSurface class>>primImage:width:height:
+	Receiver: AthensCairoSurface
+	Arguments and temporary variables: 
+		arg1: 	0
+		arg2: 	500
+		arg3: 	501
+	Receiver's instance variables: 
+		superclass: 	AthensSurface
+		methodDict: 	a MethodDictionary(#asAthensPaintOn:->AthensCairoSurface>>#asAthens...etc...
+		format: 	65543
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensCairoPDFSurface. AthensQuartzSurface. AthensCairoSDLSurface}...etc...
+		name: 	#AthensCairoSurface
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(AthensCairoDefs)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Athens-Cairo'
+		traitComposition: 	TCairoLibrary
+		localSelectors: 	a Set(#createStrokePaintFor: #stride #writeToPng: #height #load...etc...
+		session: 	a WorkingSession
+		dispatch: 	@ 16r00000000
+		dispatchStruct: 	<<error during printing>>
+
+AthensCairoSurface class>>extent:format:
+	Receiver: AthensCairoSurface
+	Arguments and temporary variables: 
+		arg1: 	(500@500)
+		arg2: 	0
+	Receiver's instance variables: 
+		superclass: 	AthensSurface
+		methodDict: 	a MethodDictionary(#asAthensPaintOn:->AthensCairoSurface>>#asAthens...etc...
+		format: 	65543
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensCairoPDFSurface. AthensQuartzSurface. AthensCairoSDLSurface}...etc...
+		name: 	#AthensCairoSurface
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(AthensCairoDefs)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Athens-Cairo'
+		traitComposition: 	TCairoLibrary
+		localSelectors: 	a Set(#createStrokePaintFor: #stride #writeToPng: #height #load...etc...
+		session: 	a WorkingSession
+		dispatch: 	@ 16r00000000
+		dispatchStruct: 	<<error during printing>>
+
+AthensCairoSurface class>>extent:
+	Receiver: AthensCairoSurface
+	Arguments and temporary variables: 
+		arg1: 	(500@500)
+	Receiver's instance variables: 
+		superclass: 	AthensSurface
+		methodDict: 	a MethodDictionary(#asAthensPaintOn:->AthensCairoSurface>>#asAthens...etc...
+		format: 	65543
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensCairoPDFSurface. AthensQuartzSurface. AthensCairoSDLSurface}...etc...
+		name: 	#AthensCairoSurface
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(AthensCairoDefs)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Athens-Cairo'
+		traitComposition: 	TCairoLibrary
+		localSelectors: 	a Set(#createStrokePaintFor: #stride #writeToPng: #height #load...etc...
+		session: 	a WorkingSession
+		dispatch: 	@ 16r00000000
+		dispatchStruct: 	<<error during printing>>
+
+TRCanvas>>initialize
+	Receiver: a TRCanvas
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		callbacks: 	nil
+		canvas: 	nil
+		shapes: 	nil
+		fixedShapes: 	nil
+		extent: 	(500@500)
+		animations: 	nil
+		morph: 	nil
+		camera: 	nil
+		announcer: 	nil
+		color: 	nil
+		session: 	nil
+		eventOverseer: 	nil
+		theme: 	nil
+		clearBackground: 	nil
+
+
+TRCanvas class(Behavior)>>new
+	Receiver: TRCanvas
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	TRCallableObject
+		methodDict: 	a MethodDictionary(#accept:->TRCanvas>>#accept: #addAnimation:->TRC...etc...
+		format: 	65550
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#TRCanvas
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Trachel-Core'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+RTView>>initialize
+	Receiver: a RTView
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		announcer: 	nil
+		attributes: 	nil
+		elements: 	a RTGroup()
+		edges: 	a RTGroup()
+		trCanvas: 	nil
+
+
+RTView class(Behavior)>>new
+	Receiver: RTView
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	RTAnnounceableObject
+		methodDict: 	a MethodDictionary(#accept:->RTView>>#accept: #add:->RTView>>#add: ...etc...
+		format: 	65541
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{RTViewForSpec}
+		name: 	#RTView
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Roassal2-Core'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+[ RTView new ] in GLMRoassal2Presentation>>initialize
+	Receiver: a GLMRoassal2Presentation(id=649066496 title=Examples pane=a GLMPane(718214912 2))
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(718214912 2)
+		title: 	'Examples'
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ self gtExamples notEmpty ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	nil
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		stepCondition: 	nil
+		wantsAutomaticRefresh: 	nil
+		painting: 	nil
+		paintingBlock: 	[ :arg3 | 
+arg3 @ RTDraggableView.
+self gtOpenOn: arg3 ]
+		view: 	nil
+		shouldPopulateSelection: 	true
+		newViewBlock: 	[ RTView new ]
+
+
+GLMRoassal2Presentation>>view
+	Receiver: a GLMRoassal2Presentation(id=649066496 title=Examples pane=a GLMPane(718214912 2))
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(718214912 2)
+		title: 	'Examples'
+		titleIcon: 	nil
+		transformation: 	nil
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ self gtExamples notEmpty ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	nil
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	nil
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	nil
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		stepCondition: 	nil
+		wantsAutomaticRefresh: 	nil
+		painting: 	nil
+		paintingBlock: 	[ :arg3 | 
+arg3 @ RTDraggableView.
+self gtOpenOn: arg3 ]
+		view: 	nil
+		shouldPopulateSelection: 	true
+		newViewBlock: 	[ RTView new ]
+
+
+GLMMorphicRoassal2Renderer>>render:
+	Receiver: a GLMMorphicRoassal2Renderer
+	Arguments and temporary variables: 
+		arg1: 	a GLMRoassal2Presentation(id=649066496 title=Examples pane=a GLMPane(7182...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		myMorph: 	nil
+
+
+
+--- The full stack ---
+Dictionary>>errorKeyNotFound:
+[ self errorKeyNotFound: arg1 ] in Dictionary>>at:
+Dictionary>>at:ifAbsent:
+Dictionary>>at:
+IRMethod>>indexForVarNamed:
+IRTranslatorV2>>visitPushTemp:
+IRPushTemp>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+IRTranslatorV2>>visitInstruction:
+[ :arg2 | self visitInstruction: arg2 ] in IRTranslatorV2(IRVisitor)>>visitSequence:
+OrderedCollection>>do:
+IRSequence>>do:
+IRTranslatorV2(IRVisitor)>>visitSequence:
+IRTranslatorV2>>visitSequence:
+IRSequence>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+[ :arg2 | self visitNode: arg2 ] in IRTranslatorV2(IRVisitor)>>visitNodes:
+SortedCollection(OrderedCollection)>>do:
+IRTranslatorV2(IRVisitor)>>visitNodes:
+IRTranslatorV2>>visitSequences:
+IRTranslatorV2>>visitMethod:
+IRMethod>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+IRMethod>>generate:
+FFICalloutMethodBuilder>>generateMethodFromSpec:
+FFICalloutMethodBuilder>>generate
+FFICalloutMethodBuilder>>build:
+FFICalloutAPI>>function:module:
+AthensCairoSurface class(Object)>>nbCall:
+AthensCairoSurface class>>primImage:width:height:
+AthensCairoSurface class>>extent:format:
+AthensCairoSurface class>>extent:
+TRCanvas>>initialize
+TRCanvas class(Behavior)>>new
+RTView>>initialize
+RTView class(Behavior)>>new
+[ RTView new ] in GLMRoassal2Presentation>>initialize
+GLMRoassal2Presentation>>view
+GLMMorphicRoassal2Renderer>>render:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+GLMMorphicRoassal2Renderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderRoassal2Presentation:
+GLMRoassal2Presentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+[ self renderObject: arg3 ] in [ :arg3 | 
+tabs
+	addLazyPage: [ self renderObject: arg3 ]
+	label: (self titleOrIconOf: arg3 in: tabs)
+	toolbar: (self renderToolbarForPresentation: arg3 inMorph: tabs)
+	action: (self labelActionBrickFor: arg3) ] in GLMMorphicTabbedRenderer>>render:
+LazyTabPage>>actualPageMorph
+LazyTabGroupMorph>>pageAt:
+LazyTabGroupMorph>>updatePageIndex:
+LazyTabGroupMorph(TabGroupMorph)>>update:
+LazyTabGroupMorph(Object)>>update:with:
+MorphChangedWithArguments>>deliverTo:
+LazyTabGroupMorph(Morph)>>handleUpdate:
+MessageSend>>value:
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: arg1 cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+BlockClosure>>on:fork:
+AnnouncementSubscription>>deliver:
+[ tmp4 deliver: arg1 ] in SubscriptionRegistry>>deliver:to:startingAt:
+BlockClosure>>ifCurtailed:
+SubscriptionRegistry>>deliver:to:startingAt:
+SubscriptionRegistry>>deliver:to:
+SubscriptionRegistry>>deliver:
+Announcer>>announce:
+GLMTabSelectorBrick(Morph)>>doAnnounce:
+GLMTabSelectorBrick(Morph)>>changed:with:
+GLMTabSelectorBrick>>selectedIndex:
+LazyTabGroupMorph(TabGroupMorph)>>selectedPageIndex:
+[ tabs selectedPageIndex: tmp3 ] in GLMMorphicTabbedRenderer>>render:
+BlockClosure>>ensure:
+GLMAnnouncer>>suspendAllWhile:
+GLMMorphicTabbedRenderer>>render:
+GLMMorphicTabbedRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderTabbedCompositePresentation:
+GLMTabbedArrangement>>renderGlamorouslyOn:
+GLMCompositePresentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderWithTitleOrNil:
+GLMMorphicTabbedRenderer>>render:
+GLMMorphicTabbedRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderTabbedCompositePresentation:
+GLMTabbedArrangement>>renderGlamorouslyOn:
+GLMCompositePresentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicDynamicRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicDynamicRenderer>>render:
+GLMMorphicDynamicRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderDynamicPresentation:
+GLMDynamicPresentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicTabbedRenderer(GLMMorphicWidgetRenderer)>>renderWithTitleOrNil:
+GLMMorphicTabbedRenderer>>render:
+GLMMorphicTabbedRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderTabbedCompositePresentation:
+GLMTabbedArrangement>>renderGlamorouslyOn:
+GLMCompositePresentation>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicPaneRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicPaneRenderer>>renderContainerFor:
+GLMMorphicPaneRenderer>>render:
+GLMMorphicPaneRenderer class(GLMMorphicWidgetRenderer class)>>render:from:
+GLMMorphicRenderer>>renderPane:
+GLMPane>>renderGlamorouslyOn:
+GLMMorphicRenderer(GLMRenderer)>>render:
+GLMMorphicPagerRenderer(GLMMorphicWidgetRenderer)>>renderObject:
+GLMMorphicPagerRenderer>>actOnPaneReplaced:
+MessageSend>>value:
+MessageSend>>cull:
+MessageSend>>cull:cull:
+[ action cull: arg1 cull: announcer ] in AnnouncementSubscription>>deliver:
+BlockClosure>>on:do:
+BlockClosure>>on:fork:
+AnnouncementSubscription>>deliver:
+[ tmp4 deliver: arg1 ] in SubscriptionRegistry>>deliver:to:startingAt:
+BlockClosure>>ifCurtailed:
+SubscriptionRegistry>>deliver:to:startingAt:
+SubscriptionRegistry>>deliver:to:
+SubscriptionRegistry>>deliver:
+GLMPager(Announcer)>>announce:
+GLMPager(GLMAnnouncer)>>announce:
+GLMPager(GLMLoggedObject)>>announce:
+GLMPager(GLMFinder)>>innerPortEvent:
+GLMPane>>portEvent:
+[ self silentValue: arg1.
+self pane
+	portEvent: (GLMPortEvent on: self previouslyValued: tmp1 in: arg2) ] in GLMPanePort>>changeValueTo:in:
+GLMPane>>notingPresentationChangeDo:
+GLMPanePort>>changeValueTo:in:
+GLMPanePort>>value:in:
+GLMPanePort>>receive:in:
+GLMPresentationBoundPort>>receive:in:
+[ self transmissionStrategy transmitIn: arg1.
+self destination receive: self in: arg1 ] in GLMTransmission>>transmitIn:
+GLMPane>>notingPresentationChangeDo:
+GLMPresentationBoundPort(GLMBoundPort)>>notingPresentationChangeDo:
+GLMTransmission>>transmitIn:
+GLMTransmission>>transmit
+ByteSymbol(Symbol)>>value:
+IdentitySet(Set)>>do:
+GLMListPresentation(GLMPresentation)>>selection:
+[ arg1
+	selection: arg2 selectionValue;
+	selectionPath: arg2 selectionPathValue ] in [ :arg2 | 
+arg1 announcer
+	suspendAllWhile: [ arg1
+			selection: arg2 selectionValue;
+			selectionPath: arg2 selectionPathValue ] ] in GLMMorphi

@@ -1,0 +1,1 @@
+col := {{1 . -1 . 0 . 0}.	{0 . 3 . 0 . 0}.	{1 . 0 . 2 . 1}.	{0 . 0 . 0 . 0}}.	coo := COOSparseMatrix withAll: col.	viz := LinkedDataVisualizer new.	viz linkMessages: #(#leftNeighbour #rightNeighbour). viz show: #transpose on: coo

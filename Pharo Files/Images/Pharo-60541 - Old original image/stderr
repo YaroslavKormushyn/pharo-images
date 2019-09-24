@@ -1,0 +1,63 @@
+[31mKeyNotFound: key #aFormat not found in Dictionary
+[0mDictionary>>errorKeyNotFound:
+[ self errorKeyNotFound: arg1 ] in Dictionary>>at: in Block: [ self errorKeyNotFound: arg1 ]
+Dictionary>>at:ifAbsent:
+Dictionary>>at:
+IRMethod>>indexForVarNamed:
+IRTranslatorV2>>visitPushTemp:
+IRPushTemp>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+IRTranslatorV2>>visitInstruction:
+[ :arg2 | self visitInstruction: arg2 ] in IRTranslatorV2(IRVisitor)>>visitSequence: in Block: [ :arg2 | self visitInstruction: arg2 ]
+OrderedCollection>>do:
+IRSequence>>do:
+IRTranslatorV2(IRVisitor)>>visitSequence:
+IRTranslatorV2>>visitSequence:
+IRSequence>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+[ :arg2 | self visitNode: arg2 ] in IRTranslatorV2(IRVisitor)>>visitNodes: in Block: [ :arg2 | self visitNode: arg2 ]
+SortedCollection(OrderedCollection)>>do:
+IRTranslatorV2(IRVisitor)>>visitNodes:
+IRTranslatorV2>>visitSequences:
+IRTranslatorV2>>visitMethod:
+IRMethod>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+IRMethod>>generate:
+FFICalloutMethodBuilder>>generateMethodFromSpec:
+FFICalloutMethodBuilder>>generate
+FFICalloutMethodBuilder>>build:
+FFICalloutAPI>>function:module:
+AthensCairoSurface class(Object)>>nbCall:
+AthensCairoSurface class>>primImage:width:height:
+[0m[31mKeyNotFound: key #aFormat not found in Dictionary
+[0mDictionary>>errorKeyNotFound:
+[ self errorKeyNotFound: arg1 ] in Dictionary>>at: in Block: [ self errorKeyNotFound: arg1 ]
+Dictionary>>at:ifAbsent:
+Dictionary>>at:
+IRMethod>>indexForVarNamed:
+IRTranslatorV2>>visitPushTemp:
+IRPushTemp>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+IRTranslatorV2>>visitInstruction:
+[ :arg2 | self visitInstruction: arg2 ] in IRTranslatorV2(IRVisitor)>>visitSequence: in Block: [ :arg2 | self visitInstruction: arg2 ]
+OrderedCollection>>do:
+IRSequence>>do:
+IRTranslatorV2(IRVisitor)>>visitSequence:
+IRTranslatorV2>>visitSequence:
+IRSequence>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+[ :arg2 | self visitNode: arg2 ] in IRTranslatorV2(IRVisitor)>>visitNodes: in Block: [ :arg2 | self visitNode: arg2 ]
+SortedCollection(OrderedCollection)>>do:
+IRTranslatorV2(IRVisitor)>>visitNodes:
+IRTranslatorV2>>visitSequences:
+IRTranslatorV2>>visitMethod:
+IRMethod>>accept:
+IRTranslatorV2(IRVisitor)>>visitNode:
+IRMethod>>generate:
+FFICalloutMethodBuilder>>generateMethodFromSpec:
+FFICalloutMethodBuilder>>generate
+FFICalloutMethodBuilder>>build:
+FFICalloutAPI>>function:module:
+AthensCairoSurface class(Object)>>nbCall:
+AthensCairoSurface class>>primImage:width:height:
+[0m

@@ -1,0 +1,211 @@
+[31mInstance of SmallInteger did not understand #asArray
+[0mSmallInteger(Object)>>doesNotUnderstand: #asArray
+CatalogProject class>>createRepositoryURLtoNameMappings
+CatalogProject class>>repositoryURLToNameMappings
+CatalogProject>>repositoryName
+CatalogProject>>allKeywords
+[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ project allKeywords sorted ] ] in [ :a | 
+a list
+	title: 'Available';
+	in: [ :this | 
+		self buildMenuOn: this.
+		self buildContextMenuOn: this ];
+	display: [ :thisProvider | thisProvider projects ];
+	format: [ :project | project name ];
+	icon: [ :project | self iconFor: project ];
+	filterOn: [ :text :each | each matches: text ];
+	tags: [ :project | 
+		project keywords
+			ifNil: [ #() ]
+			ifNotNil: [ project allKeywords sorted ] ] ] in CatalogBrowser>>buildBrowser in Block: [ :project | ...
+BlockClosure>>glamourValueWithArgs:
+BlockClosure(ProtoObject)>>glamourValue:
+GLMListPresentation>>computeTagsFor:from:
+GLMListPresentation>>computeTagsFor:
+GLMListPresentation(GLMListingPresentation)>>tagsFor:fromProvider:to:
+GLMTreeMorphNodeModel>>tagMorphsFrom:
+GLMTreeMorphNodeModel>>elementColumn
+[ :node :cont | node perform: self rowMorphGetSelector ] in MorphTreeColumn>>rowMorphGetterBlock in Block: [ :node :cont | node perform: self rowMorphGetSele...etc...
+MorphTreeColumn>>rowMorphFor:
+[ :col | 
+| v |
+v := col rowMorphFor: complexContents.
+controls add: v.
+col -> v ] in MorphTreeNodeMorph>>buildRowMorph in Block: [ :col | ...
+OrderedCollection>>collect:
+MorphTreeNodeMorph>>buildRowMorph
+MorphTreeNodeMorph>>initRow
+MorphTreeNodeMorph>>initWithContents:prior:forList:indentLevel:
+[ :item :idx | 
+priorMorph := self indentingItemClass new
+	initWithContents: item
+	prior: priorMorph
+	forList: self
+	indentLevel: newIndent.
+firstAddition ifNil: [ firstAddition := priorMorph ].
+morphList add: priorMorph.
+"Was this row expanded ? if true -> expand it
+			again "
+((item hasEquivalentIn: expandedItems) or: [ priorMorph isExpanded ])
+	ifTrue: [ priorMorph isExpanded: true.
+		priorMorph
+			addChildrenForList: self
+			addingTo: morphList
+			withExpandedItems: expandedItems ] ] in GLMPaginatedMorphTreeMorph(MorphTreeMorph)>>addMorphsTo:from:withExpandedItems:atLevel: in Block: [ :item :idx | ...
+OrderedCollection(SequenceableCollection)>>withIndexDo:
+OrderedCollection(SequenceableCollection)>>doWithIndex:
+GLMPaginatedMorphTreeMorph(MorphTreeMorph)>>addMorphsTo:from:withExpandedItems:atLevel:
+GLMPaginatedMorphTreeMorph(MorphTreeMorph)>>addSubmorphsFromNodeList:previouslyExpanded:
+GLMPaginatedMorphTreeMorph(MorphTreeMorph)>>addSubmorphsFromNodeList
+GLMPaginatedMorphTreeMorph(MorphTreeMorph)>>buildContents
+GLMPaginatedMorphTreeMorph(PaginatedMorphTreeMorph)>>buildContents
+GLMMorphicListRenderer(GLMMorphicListingRenderer)>>treeMorphFor:and:
+GLMMorphicListRenderer(GLMMorphicListingRenderer)>>render:
+[0m[31mAssertionFailure: Project location does not seems to be a valid git repository.
+[0mIceTipLocalRepositoryPanel(Object)>>assert:description:
+IceTipLocalRepositoryPanel>>validate
+IceTipRegisterRepositoryDialog>>doAccept
+[ self doAccept.
+true ] in IceTipRegisterRepositoryDialog(IceTipOptionDialog)>>accept in Block: [ self doAccept....
+BlockClosure>>on:do:
+IceTipRegisterRepositoryDialog(IceTipOptionDialog)>>accept
+[ self accept ] in IceTipRegisterRepositoryDialog(IceTipDialog)>>openDialogWithSpec in Block: [ self accept ]
+[ okAction value value == false
+	ifFalse: [ owner ifNil: [ self delete ] ifNotNil: [ owner delete ] ] ] in OkCancelToolbar(OkToolbar)>>okActionBlock in Block: [ okAction value value == false...
+ButtonPresenter>>performAction
+MorphicButtonAdapter>>action
+PluggableButtonMorph>>performAction:
+[ :m | 
+(m containsPoint: evt cursorPoint)
+	ifTrue: [ m enabled
+			ifTrue: [ m performAction: evt ] ] ] in PluggableButtonMorph>>mouseUp: in Block: [ :m | ...
+Array(SequenceableCollection)>>do:
+PluggableButtonMorph>>mouseUp:
+PluggableButtonMorph(Morph)>>handleMouseUp:
+MouseButtonEvent>>sentTo:
+PluggableButtonMorph(Morph)>>handleEvent:
+PluggableButtonMorph(Morph)>>handleFocusEvent:
+[ ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder
+	handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear: in Block: [ ActiveHand := self....
+BlockClosure>>on:do:
+WorldMorph>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendMouseEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :h | 
+self activeHand: h.
+h processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor: in Block: [ :h | ...
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+[0m[31mInstance of RTStyledMultiLine did not understand #elements:
+[0mRTStyledMultiLine(Object)>>doesNotUnderstand: #elements:
+RTShapeBuilder>>doesNotUnderstand: #elements:
+LinkedDataVisualizer>>drawEdgesWith:
+LinkedDataVisualizer>>display:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate: in Block: [ textMorph textArea editor highlightEvaluateAndDo...etc...
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate: in Block: [ textMorph textArea...
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess in Block: [ [ WorldMorph doOneCycle....
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess in Block: [ self value....
+[0m[31mInstance of IceTipPullModel did not understand #name
+[0mIceTipPullModel(Object)>>doesNotUnderstand: #name
+IceTipCachedModel>>name
+IceTipResetBranchToThisCommitCommand>>defaultMenuItemName
+CmdContextMenuActivation(CmdMenuCommandActivationStrategy)>>menuItemNameFor:
+CmdCommandActivator>>menuItemName
+CmdCommandMenuItem>>name
+[ :a :b | 
+a order = b order
+	ifTrue: [ a name <= b name ]
+	ifFalse: [ a order <= b order ] ] in CmdRootMenuGroup(CmdMenuGroup)>>initialize in Block: [ :a :b | ...
+SortedCollection>>indexForInserting:
+SortedCollection>>add:
+CmdRootMenuGroup(CmdMenuGroup)>>addItem:
+CmdMenu>>buildCommandItemInContext:activatingBy:
+[ :activation | self buildCommandItemInContext: aToolContext activatingBy: activation ] in CmdMenu>>buildInContext: in Block: [ :activation | self buildCommandItemInContext: aT...etc...
+SortedCollection(SequenceableCollection)>>select:thenDo:
+CmdContextMenuActivation class(ClassAnnotation class)>>visibleInstancesInContext:do:
+CmdMenu>>buildInContext:
+CmdContextMenuActivation class(CmdMenuCommandActivationStrategy class)>>buildMenuInContext:
+CmdContextMenuActivation class(CmdMenuCommandActivationStrategy class)>>buildContextMenuFor:inContext:
+IceTipDataSource>>menuColumn:row:
+FTTableMorph>>showMenuForIndex:
+FTTableMorph>>showMenuForPosition:
+FTTableMorph>>click:
+MouseClickState>>click
+MouseClickState>>handleEvent:from:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :h | 
+self activeHand: h.
+h processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor: in Block: [ :h | ...
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+[0m[31mInstance of IceTipPullModel did not understand #name
+[0mIceTipPullModel(Object)>>doesNotUnderstand: #name
+IceTipCachedModel>>name
+IceTipResetBranchToThisCommitCommand>>defaultMenuItemName
+CmdContextMenuActivation(CmdMenuCommandActivationStrategy)>>menuItemNameFor:
+CmdCommandActivator>>menuItemName
+CmdCommandMenuItem>>name
+[ :a :b | 
+a order = b order
+	ifTrue: [ a name <= b name ]
+	ifFalse: [ a order <= b order ] ] in CmdRootMenuGroup(CmdMenuGroup)>>initialize in Block: [ :a :b | ...
+SortedCollection>>indexForInserting:
+SortedCollection>>add:
+CmdRootMenuGroup(CmdMenuGroup)>>addItem:
+CmdMenu>>buildCommandItemInContext:activatingBy:
+[ :activation | self buildCommandItemInContext: aToolContext activatingBy: activation ] in CmdMenu>>buildInContext: in Block: [ :activation | self buildCommandItemInContext: aT...etc...
+SortedCollection(SequenceableCollection)>>select:thenDo:
+CmdContextMenuActivation class(ClassAnnotation class)>>visibleInstancesInContext:do:
+CmdMenu>>buildInContext:
+CmdContextMenuActivation class(CmdMenuCommandActivationStrategy class)>>buildMenuInContext:
+CmdContextMenuActivation class(CmdMenuCommandActivationStrategy class)>>buildContextMenuFor:inContext:
+IceTipDataSource>>menuColumn:row:
+FTTableMorph>>showMenuForIndex:
+FTTableMorph>>showMenuForPosition:
+FTTableMorph>>click:
+MouseClickState>>click
+MouseClickState>>handleEvent:from:
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :h | 
+self activeHand: h.
+h processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor: in Block: [ :h | ...
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+[0m

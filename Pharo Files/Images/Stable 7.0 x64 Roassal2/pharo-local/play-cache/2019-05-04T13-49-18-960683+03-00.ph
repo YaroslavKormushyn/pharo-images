@@ -1,1 +1,0 @@
-test := TestReflCl new.testlink := TestReflClLink new setLinksWith: test.test methodWithTemp: 1.

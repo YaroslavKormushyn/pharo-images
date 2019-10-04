@@ -1,1 +1,0 @@
-TRPlatform current trMorphClass

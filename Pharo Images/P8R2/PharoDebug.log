@@ -1,0 +1,1970 @@
+THERE_BE_DRAGONS_HERE
+Instance of SmallInteger did not understand #asArray
+4 October 2019 9:55:27.769021 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+VM: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Wed Feb 6 15:51:18 2019 CommitHash: a838346 Plugins: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.832.sha.5bf8ad62745116525adb12aaf7d6b31418304788 (32 Bit)]
+
+SmallInteger(Object)>>doesNotUnderstand: #asArray
+	Receiver: 3
+	Arguments and temporary variables: 
+		aMessage: 	asArray
+		exception: 	MessageNotUnderstood: SmallInteger>>asArray
+		resumeValue: 	ni
+	Receiver's instance variables: 
+3
+
+CatalogProject class>>createRepositoryURLtoNameMappings
+	Receiver: CatalogProject
+	Arguments and temporary variables: 
+		repos: 	a Dictionary()
+		v: 	
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#allKeywords->CatalogProject>>#allKeywords #cont...etc...
+		format: 	65542
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CatalogProject
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Tool-Catalog-Base'
+		repositoryURLToNameMappings: 	nil
+
+
+CatalogProject class>>repositoryURLToNameMappings
+	Receiver: CatalogProject
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#allKeywords->CatalogProject>>#allKeywords #cont...etc...
+		format: 	65542
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CatalogProject
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Tool-Catalog-Base'
+		repositoryURLToNameMappings: 	nil
+
+
+CatalogProject>>repositoryName
+	Receiver: Project(A4BP)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		name: 	'A4BP'
+		packageName: 	'ConfigurationOfA4BP'
+		repositoryUrl: 	'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo50/main'
+		description: 	'A4BP (Assessment for Business Process).
+See more here: http://a4b...etc...
+		keywords: 	#('development' 'bpmn')
+		contactInfo: 	nil
+
+
+CatalogProject>>allKeywords
+	Receiver: Project(A4BP)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		name: 	'A4BP'
+		packageName: 	'ConfigurationOfA4BP'
+		repositoryUrl: 	'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo50/main'
+		description: 	'A4BP (Assessment for Business Process).
+See more here: http://a4b...etc...
+		keywords: 	#('development' 'bpmn')
+		contactInfo: 	nil
+
+
+[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ project allKeywords sorted ] ] in [ :a | 
+a list
+	title: 'Available';
+	in: [ :this | 
+		self buildMenuOn: this.
+		self buildContextMenuOn: this ];
+	display: [ :thisProvider | thisProvider projects ];
+	format: [ :project | project name ];
+	icon: [ :project | self iconFor: project ];
+	filterOn: [ :text :each | each matches: text ];
+	tags: [ :project | 
+		project keywords
+			ifNil: [ #() ]
+			ifNotNil: [ project allKeywords sorted ] ] ] in CatalogBrowser>>buildBrowser
+	Receiver: a CatalogBrowser
+	Arguments and temporary variables: 
+		browser: 	nil
+		a: 	a GLMCompositePresentation(id=645312000 title=nil pane=a GLMPane(968781568 r...etc...
+		project: 	Project(A4BP
+	Receiver's instance variables: 
+		dependents: 	nil
+		announcer: 	nil
+		provider: 	a CatalogProvider
+
+
+BlockClosure>>glamourValueWithArgs:
+	Receiver: [ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ project allKeywords sorted ] ]...etc...
+	Arguments and temporary variables: 
+		anArray: 	an Array(Project(A4BP) a CatalogProvider
+	Receiver's instance variables: 
+		outerContext: 	[ :a | 
+a list
+	title: 'Available';
+	in: [ :this | 
+		self buildM...etc...
+		startpc: 	246
+		numArgs: 	1
+
+
+BlockClosure(ProtoObject)>>glamourValue:
+	Receiver: [ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ project allKeywords sorted ] ]...etc...
+	Arguments and temporary variables: 
+		anObject: 	a GLMMultiValue(Project(A4BP) a CatalogProvider)
+		args: 	an Array(Project(A4BP) a CatalogProvider
+	Receiver's instance variables: 
+		outerContext: 	[ :a | 
+a list
+	title: 'Available';
+	in: [ :this | 
+		self buildM...etc...
+		startpc: 	246
+		numArgs: 	1
+
+
+GLMListPresentation>>computeTagsFor:from:
+	Receiver: a GLMListPresentation(id=960808960 title='Available' pane=a GLMPane(315319552 projects))
+	Arguments and temporary variables: 
+		aGlamourValue: 	a GLMMultiValue(Project(A4BP) a CatalogProvider)
+		aBlock: 	[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ project all...etc...
+		value: 	ni
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(315319552 projects)
+		title: 	'Available'
+		titleIcon: 	nil
+		transformation: 	[ :thisProvider | thisProvider projects ]
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMListPresentation(id=437249280 title='Available' pane=a GL...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction)
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	an Array(Project(A4BP) Project(A4BPonMoose) Project(AXAnn...etc...
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		stepCondition: 	nil
+		wantsAutomaticRefresh: 	nil
+		format: 	[ :project | project name ]
+		icon: 	[ :project | self iconFor: project ]
+		searchBlock: 	nil
+		filterBlock: 	[ :text :each | each matches: text ]
+		amountToShowBlock: 	nil
+		allowsMultipleSelection: 	false
+		allowsDeselection: 	false
+		tagsStyle: 	nil
+		helpMessage: 	nil
+		sortBlock: 	nil
+		textBackgroundColor: 	Color transparent
+		dropOnItemBlock: 	nil
+		allowDropOnItemBlock: 	nil
+		allowItemDragBlock: 	nil
+		transformDraggedItemBlock: 	nil
+		allowsRecursiveSearch: 	nil
+		tagsBlock: 	[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ project ...etc...
+		tagsFilterBlock: 	[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ pr...etc...
+
+
+GLMListPresentation>>computeTagsFor:
+	Receiver: a GLMListPresentation(id=960808960 title='Available' pane=a GLMPane(315319552 projects))
+	Arguments and temporary variables: 
+		aGlamourValue: 	a GLMMultiValue(Project(A4BP) a CatalogProvider
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(315319552 projects)
+		title: 	'Available'
+		titleIcon: 	nil
+		transformation: 	[ :thisProvider | thisProvider projects ]
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMListPresentation(id=437249280 title='Available' pane=a GL...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction)
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	an Array(Project(A4BP) Project(A4BPonMoose) Project(AXAnn...etc...
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		stepCondition: 	nil
+		wantsAutomaticRefresh: 	nil
+		format: 	[ :project | project name ]
+		icon: 	[ :project | self iconFor: project ]
+		searchBlock: 	nil
+		filterBlock: 	[ :text :each | each matches: text ]
+		amountToShowBlock: 	nil
+		allowsMultipleSelection: 	false
+		allowsDeselection: 	false
+		tagsStyle: 	nil
+		helpMessage: 	nil
+		sortBlock: 	nil
+		textBackgroundColor: 	Color transparent
+		dropOnItemBlock: 	nil
+		allowDropOnItemBlock: 	nil
+		allowItemDragBlock: 	nil
+		transformDraggedItemBlock: 	nil
+		allowsRecursiveSearch: 	nil
+		tagsBlock: 	[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ project ...etc...
+		tagsFilterBlock: 	[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ pr...etc...
+
+
+GLMListPresentation(GLMListingPresentation)>>tagsFor:fromProvider:to:
+	Receiver: a GLMListPresentation(id=960808960 title='Available' pane=a GLMPane(315319552 projects))
+	Arguments and temporary variables: 
+		anObject: 	Project(A4BP)
+		aTagProvider: 	a GLMListPresentation(id=960808960 title='Available' pane=a GLMPa...etc...
+		operation: 	#show
+		glamourValue: 	a GLMMultiValue(Project(A4BP) a CatalogProvider
+	Receiver's instance variables: 
+		registry: 	a SubscriptionRegistry
+		suspendAll: 	false
+		suspendedAnnouncemets: 	an OrderedCollection()
+		logger: 	a GLMNullLogger
+		pane: 	a GLMPane(315319552 projects)
+		title: 	'Available'
+		titleIcon: 	nil
+		transformation: 	[ :thisProvider | thisProvider projects ]
+		actions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction a GLMGeneri...etc...
+		condition: 	[ true ]
+		implicitNotNil: 	true
+		dynamicActionsBlock: 	nil
+		color: 	nil
+		customValidation: 	nil
+		shouldValidate: 	false
+		acceptsSelection: 	nil
+		parentPrototype: 	a GLMListPresentation(id=437249280 title='Available' pane=a GL...etc...
+		registeredAnnouncers: 	nil
+		updateActions: 	an OrderedCollection()
+		selectionActions: 	an OrderedCollection(a GLMGenericAction a GLMGenericAction)
+		selectionDynamicActionsBlock: 	nil
+		implicitAllNil: 	false
+		rawSelectionTransmissions: 	an IdentitySet(GLMTransmission (origins=an OrderedCo...etc...
+		statusPane: 	nil
+		sourceLink: 	nil
+		initializationBlock: 	nil
+		cachedDisplayedValue: 	an Array(Project(A4BP) Project(A4BPonMoose) Project(AXAnn...etc...
+		labelActionBlock: 	nil
+		portChangeActions: 	an OrderedCollection()
+		wantsSteps: 	nil
+		stepTime: 	nil
+		stepCondition: 	nil
+		wantsAutomaticRefresh: 	nil
+		format: 	[ :project | project name ]
+		icon: 	[ :project | self iconFor: project ]
+		searchBlock: 	nil
+		filterBlock: 	[ :text :each | each matches: text ]
+		amountToShowBlock: 	nil
+		allowsMultipleSelection: 	false
+		allowsDeselection: 	false
+		tagsStyle: 	nil
+		helpMessage: 	nil
+		sortBlock: 	nil
+		textBackgroundColor: 	Color transparent
+		dropOnItemBlock: 	nil
+		allowDropOnItemBlock: 	nil
+		allowItemDragBlock: 	nil
+		transformDraggedItemBlock: 	nil
+		allowsRecursiveSearch: 	nil
+		tagsBlock: 	[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ project ...etc...
+		tagsFilterBlock: 	[ :project | 
+project keywords
+	ifNil: [ #() ]
+	ifNotNil: [ pr...etc...
+
+
+GLMTreeMorphNodeModel>>tagMorphsFrom:
+	Receiver: a NodeModel with Project(A4BP)
+	Arguments and temporary variables: 
+		aTagPTHERE_BE_DRAGONS_HERE
+AssertionFailure: Project location does not seems to be a valid git repository.
+4 October 2019 10:14:51.540021 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+VM: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Wed Feb 6 15:51:18 2019 CommitHash: a838346 Plugins: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.832.sha.5bf8ad62745116525adb12aaf7d6b31418304788 (32 Bit)]
+
+IceTipLocalRepositoryPanel(Object)>>assert:description:
+	Receiver: an IceTipLocalRepositoryPanel
+	Arguments and temporary variables: 
+		aBlock: 	false
+		aStringOrBlock: 	'Project location does not seems to be a valid git repository.'...etc..
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a MorphicContainerAdapter a MorphicContainerAdapt...etc...
+		announcer: 	an Announcer
+		focusOrder: 	an OrderedCollection(an IceTipDirectoryPresenter)
+		owner: 	nil
+		window: 	a NewValueHolder[ nil ]
+		spec: 	a SpecWrapper
+		extentHolder: 	a NewValueHolder[ nil ]
+		needRebuild: 	a NewValueHolder[ true ]
+		additionalKeyBindings: 	a Dictionary(Shift + Tab->[ self giveFocusToPreviousFrom...etc...
+		keyStrokesForNextFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		keyStrokesForPreviousFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		windowIcon: 	a NewValueHolder[ nil ]
+		aboutText: 	a NewValueHolder[ nil ]
+		askOkToClose: 	a NewValueHolder[ false ]
+		titleHolder: 	a CollectionValueHolder[ 'Import from existing clone' ]
+		projectLocation: 	an IceTipDirectoryPresenter
+		remoteLabel: 	nil
+		remoteInputText: 	nil
+		spacePanel: 	a MorphicGenericAdapter
+		repository: 	nil
+
+
+IceTipLocalRepositoryPanel>>validate
+	Receiver: an IceTipLocalRepositoryPanel
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a MorphicContainerAdapter a MorphicContainerAdapt...etc...
+		announcer: 	an Announcer
+		focusOrder: 	an OrderedCollection(an IceTipDirectoryPresenter)
+		owner: 	nil
+		window: 	a NewValueHolder[ nil ]
+		spec: 	a SpecWrapper
+		extentHolder: 	a NewValueHolder[ nil ]
+		needRebuild: 	a NewValueHolder[ true ]
+		additionalKeyBindings: 	a Dictionary(Shift + Tab->[ self giveFocusToPreviousFrom...etc...
+		keyStrokesForNextFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		keyStrokesForPreviousFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		windowIcon: 	a NewValueHolder[ nil ]
+		aboutText: 	a NewValueHolder[ nil ]
+		askOkToClose: 	a NewValueHolder[ false ]
+		titleHolder: 	a CollectionValueHolder[ 'Import from existing clone' ]
+		projectLocation: 	an IceTipDirectoryPresenter
+		remoteLabel: 	nil
+		remoteInputText: 	nil
+		spacePanel: 	a MorphicGenericAdapter
+		repository: 	nil
+
+
+IceTipRegisterRepositoryDialog>>doAccept
+	Receiver: an IceTipRegisterRepositoryDialog
+	Arguments and temporary variables: 
+		newRepository: 	ni
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a MorphicContainerAdapter a MorphicContainerAdapt...etc...
+		announcer: 	an Announcer
+		focusOrder: 	an OrderedCollection(a MorphicGenericAdapter an IceTipLocalReposito...etc...
+		owner: 	nil
+		window: 	a NewValueHolder[ a DialogWindowPresenter ]
+		spec: 	a SpecWrapper
+		extentHolder: 	a NewValueHolder[ nil ]
+		needRebuild: 	a NewValueHolder[ true ]
+		additionalKeyBindings: 	a Dictionary()
+		keyStrokesForNextFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		keyStrokesForPreviousFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		windowIcon: 	a NewValueHolder[ nil ]
+		aboutText: 	a NewValueHolder[ nil ]
+		askOkToClose: 	a NewValueHolder[ false ]
+		titleHolder: 	a CollectionValueHolder[ 'Import from existing clone' ]
+		acceptButton: 	a ButtonPresenter
+		cancelButton: 	a ButtonPresenter
+		typeList: 	a MorphicGenericAdapter
+		type: 	an IceTipLocalRepositoryPanel
+		contentPanel: 	a MorphicGenericAdapter
+		types: 	an OrderedCollection(an IceTipNewRepositoryPanel an IceTipLocalRepositor...etc...
+		repository: 	nil
+		acceptBlock: 	nil
+
+
+[ self doAccept.
+true ] in IceTipRegisterRepositoryDialog(IceTipOptionDialog)>>accept
+	Receiver: an IceTipRegisterRepositoryDialog
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a MorphicContainerAdapter a MorphicContainerAdapt...etc...
+		announcer: 	an Announcer
+		focusOrder: 	an OrderedCollection(a MorphicGenericAdapter an IceTipLocalReposito...etc...
+		owner: 	nil
+		window: 	a NewValueHolder[ a DialogWindowPresenter ]
+		spec: 	a SpecWrapper
+		extentHolder: 	a NewValueHolder[ nil ]
+		needRebuild: 	a NewValueHolder[ true ]
+		additionalKeyBindings: 	a Dictionary()
+		keyStrokesForNextFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		keyStrokesForPreviousFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		windowIcon: 	a NewValueHolder[ nil ]
+		aboutText: 	a NewValueHolder[ nil ]
+		askOkToClose: 	a NewValueHolder[ false ]
+		titleHolder: 	a CollectionValueHolder[ 'Import from existing clone' ]
+		acceptButton: 	a ButtonPresenter
+		cancelButton: 	a ButtonPresenter
+		typeList: 	a MorphicGenericAdapter
+		type: 	an IceTipLocalRepositoryPanel
+		contentPanel: 	a MorphicGenericAdapter
+		types: 	an OrderedCollection(an IceTipNewRepositoryPanel an IceTipLocalRepositor...etc...
+		repository: 	nil
+		acceptBlock: 	nil
+
+
+BlockClosure>>on:do:
+	Receiver: [ self doAccept.
+true ]
+	Arguments and temporary variables: 
+		exception: 	an ExceptionSet
+		handlerAction: 	[ :e | 
+e acceptError: IceTipInteractiveErrorVisitor new.
+false ...etc..
+	Receiver's instance variables: 
+		outerContext: 	IceTipRegisterRepositoryDialog(IceTipOptionDialog)>>accept
+		startpc: 	45
+		numArgs: 	0
+
+
+IceTipRegisterRepositoryDialog(IceTipOptionDialog)>>accept
+	Receiver: an IceTipRegisterRepositoryDialog
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a MorphicContainerAdapter a MorphicContainerAdapt...etc...
+		announcer: 	an Announcer
+		focusOrder: 	an OrderedCollection(a MorphicGenericAdapter an IceTipLocalReposito...etc...
+		owner: 	nil
+		window: 	a NewValueHolder[ a DialogWindowPresenter ]
+		spec: 	a SpecWrapper
+		extentHolder: 	a NewValueHolder[ nil ]
+		needRebuild: 	a NewValueHolder[ true ]
+		additionalKeyBindings: 	a Dictionary()
+		keyStrokesForNextFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		keyStrokesForPreviousFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		windowIcon: 	a NewValueHolder[ nil ]
+		aboutText: 	a NewValueHolder[ nil ]
+		askOkToClose: 	a NewValueHolder[ false ]
+		titleHolder: 	a CollectionValueHolder[ 'Import from existing clone' ]
+		acceptButton: 	a ButtonPresenter
+		cancelButton: 	a ButtonPresenter
+		typeList: 	a MorphicGenericAdapter
+		type: 	an IceTipLocalRepositoryPanel
+		contentPanel: 	a MorphicGenericAdapter
+		types: 	an OrderedCollection(an IceTipNewRepositoryPanel an IceTipLocalRepositor...etc...
+		repository: 	nil
+		acceptBlock: 	nil
+
+
+[ self accept ] in IceTipRegisterRepositoryDialog(IceTipDialog)>>openDialogWithSpec
+	Receiver: an IceTipRegisterRepositoryDialog
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a MorphicContainerAdapter a MorphicContainerAdapt...etc...
+		announcer: 	an Announcer
+		focusOrder: 	an OrderedCollection(a MorphicGenericAdapter an IceTipLocalReposito...etc...
+		owner: 	nil
+		window: 	a NewValueHolder[ a DialogWindowPresenter ]
+		spec: 	a SpecWrapper
+		extentHolder: 	a NewValueHolder[ nil ]
+		needRebuild: 	a NewValueHolder[ true ]
+		additionalKeyBindings: 	a Dictionary()
+		keyStrokesForNextFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		keyStrokesForPreviousFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		windowIcon: 	a NewValueHolder[ nil ]
+		aboutText: 	a NewValueHolder[ nil ]
+		askOkToClose: 	a NewValueHolder[ false ]
+		titleHolder: 	a CollectionValueHolder[ 'Import from existing clone' ]
+		acceptButton: 	a ButtonPresenter
+		cancelButton: 	a ButtonPresenter
+		typeList: 	a MorphicGenericAdapter
+		type: 	an IceTipLocalRepositoryPanel
+		contentPanel: 	a MorphicGenericAdapter
+		types: 	an OrderedCollection(an IceTipNewRepositoryPanel an IceTipLocalRepositor...etc...
+		repository: 	nil
+		acceptBlock: 	nil
+
+
+[ okAction value value == false
+	ifFalse: [ owner ifNil: [ self delete ] ifNotNil: [ owner delete ] ] ] in OkCancelToolbar(OkToolbar)>>okActionBlock
+	Receiver: an OkCancelToolbar
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a MorphicContainerAdapter)
+		announcer: 	an Announcer
+		focusOrder: 	an OrderedCollection(a ButtonPresenter a ButtonPresenter a DialogWi...etc...
+		owner: 	a SpecDialogWindow(515833600) named: Import from existing clone
+		window: 	a NewValueHolder[ nil ]
+		spec: 	a SpecWrapper
+		extentHolder: 	a NewValueHolder[ nil ]
+		needRebuild: 	a NewValueHolder[ true ]
+		additionalKeyBindings: 	a Dictionary()
+		keyStrokesForNextFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		keyStrokesForPreviousFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		windowIcon: 	a NewValueHolder[ nil ]
+		aboutText: 	a NewValueHolder[ nil ]
+		askOkToClose: 	a NewValueHolder[ false ]
+		titleHolder: 	a CollectionValueHolder[ 'Ok Cancel' ]
+		okButton: 	a ButtonPresenter
+		okAction: 	a NewValueHolder[ [ self accept ] ]
+		cancelButton: 	a ButtonPresenter
+		cancelAction: 	a NewValueHolder[ [ true ] ]
+		cancelled: 	a NewValueHolder[ false ]
+
+
+ButtonPresenter>>performAction
+	Receiver: a ButtonPresenter
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a MorphicButtonAdapter)
+		announcer: 	an Announcer
+		focusOrder: 	nil
+		owner: 	an OkCancelToolbar
+		window: 	a NewValueHolder[ nil ]
+		spec: 	a SpecWrapper
+		extentHolder: 	a NewValueHolder[ nil ]
+		needRebuild: 	a NewValueHolder[ true ]
+		additionalKeyBindings: 	a Dictionary(Character space->[ self action ] )
+		keyStrokesForNextFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		keyStrokesForPreviousFocusHolder: 	a CollectionValueHolder[ an Array() ]
+		windowIcon: 	a NewValueHolder[ nil ]
+		aboutText: 	a NewValueHolder[ nil ]
+		askOkToClose: 	a NewValueHolder[ false ]
+		titleHolder: 	a CollectionValueHolder[ 'Button' ]
+		helpHolder: 	a NewValueHolder[ nil ]
+		borderWidth: 	a NewValueHolder[ 0 ]
+		borderColor: 	a NewValueHolder[ Color transparent ]
+		enabledHolder: 	a NewValueHolder[ true ]
+		dragEnabled: 	a NewValueHolder[ false ]
+		dropEnabled: 	a NewValueHolder[ false ]
+		dragTransformationBlock: 	a NewValueHolder[ [ :item :source | item ] ]
+		wantDropBlock: 	a NewValueHolder[ [ :draggedItem :event :source | self dropEnabl...etc...
+		acceptDropBlock: 	a NewValueHolder[ [ :draggedItem :event :source |  ] ]
+		transferBlock: 	a NewValueHolder[ [ :passenger :source | self defaultTransferFor...etc...
+		color: 	a NewValueHolder[ nil ]
+		actionHolder: 	a NewValueHolder[ [ okAction value value == false
+	ifFalse: [ own...etc...
+		labelHolder: 	a CollectionValueHolder[ 'Ok' ]
+		fontHolder: 	a NewValueHolder[ nil ]
+		stateHolder: 	a NewValueHolder[ false ]
+		actionPerformedHolder: 	a NewValueHolder[ nil ]
+		askBeforeChangingHolder: 	a NewValueHolder[ false ]
+		iconHolder: 	a NewValueHolder[ nil ]
+		menuHolder: 	a NewValueHolder[ a MenuPresenter ]
+		shortcutHolder: 	a NewValueHolder[ nil ]
+
+
+MorphicButtonAdapter>>action
+	Receiver: a MorphicButtonAdapter
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a PluggableButtonMorph(238129408))
+		announcer: 	nil
+		model: 	a ButtonPresenter
+		widget: 	a PluggableButtonMorph(238129408)
+		selector: 	nil
+
+
+PluggableButtonMorph>>performAction:
+	Receiver: a PluggableButtonMorph(238129408)
+	Arguments and temporary variables: 
+		event: 	[(993@487) mouseUp 17623343 nil
+	Receiver's instance variables: 
+		bounds: 	(955.0@470.0) corner: (1027.0@498.0)
+		owner: 	a PanelMorph(1050309376)
+		submorphs: 	an Array(an AlignmentMorph(145607680))
+		fullBounds: 	nil
+		color: 	(Color r: 0.2903225806451613 g: 0.2883675464320626 b: 0.2883675464320626...etc...
+		extension: 	a MorphExtension (340945664) [eventHandler = a MorphicEventHandler] ...etc...
+		borderWidth: 	1
+		borderColor: 	#simple
+		model: 	a MorphicButtonAdapter
+		label: 	a Text for 'Ok'
+		icon: 	nil
+		getIconSelector: 	nil
+		getStateSelector: 	#state
+		actionSelector: 	#action
+		font: 	nil
+		getLabelSelector: 	#label
+		getMenuSelector: 	nil
+		shortcutCharacter: 	nil
+		askBeforeChanging: 	false
+		triggerOnMouseDown: 	false
+		offColor: 	nil
+		onColor: 	nil
+		feedbackColor: 	nil
+		showSelectionFeedback: 	false
+		allButtons: 	nil
+		arguments: 	#()
+		argumentsProvider: 	nil
+		argumentsSelector: 	nil
+		enabled: 	true
+		actionBlock: 	nil
+		getColorSelector: 	nil
+		getEnabledSelector: 	#enabled
+		getFontSelector: 	#font
+		labelMorph: 	a TextMorph(791435520)
+		iconMorph: 	nil
+		iconPosition: 	#left
+		lastState: 	false
+
+
+[ :m | 
+(m containsPoint: evt cursorPoint)
+	ifTrue: [ m enabled
+			ifTrue: [ m performAction: evt ] ] ] in PluggableButtonMorph>>mouseUp:
+	Receiver: a PluggableButtonMorph(238129408)
+	Arguments and temporary variables: 
+		evt: 	[(993@487) mouseUp 17623343 nil]
+		all: 	an Array(a PluggableButtonMorph(261294592) a PluggableButtonMorph(23812940...etc...
+		m: 	a PluggableButtonMorph(238129408
+	Receiver's instance variables: 
+		bounds: 	(955.0@470.0) corner: (1027.0@498.0)
+		owner: 	a PanelMorph(1050309376)
+		submorphs: 	an Array(an AlignmentMorph(145607680))
+		fullBounds: 	nil
+		color: 	(Color r: 0.2903225806451613 g: 0.2883675464320626 b: 0.2883675464320626...etc...
+		extension: 	a MorphExtension (340945664) [eventHandler = a MorphicEventHandler] ...etc...
+		borderWidth: 	1
+		borderColor: 	#simple
+		model: 	a MorphicButtonAdapter
+		label: 	a Text for 'Ok'
+		icon: 	nil
+		getIconSelector: 	nil
+		getStateSelector: 	#state
+		actionSelector: 	#action
+		font: 	nil
+		getLabelSelector: 	#label
+		getMenuSelector: 	nil
+		shortcutCharacter: 	nil
+		askBeforeChanging: 	false
+		triggerOnMouseDown: 	false
+		offColor: 	nil
+		onColor: 	nil
+		feedbackColor: 	nil
+		showSelectionFeedback: 	false
+		allButtons: 	nil
+		arguments: 	#()
+		argumentsProvider: 	nil
+		argumentsSelector: 	nil
+		enabled: 	true
+		actionBlock: 	nil
+		getColorSelector: 	nil
+		getEnabledSelector: 	#enabled
+		getFontSelector: 	#font
+		labelMorph: 	a TextMorph(791435520)
+		iconMorph: 	nil
+		iconPosition: 	#left
+		lastState: 	false
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a PluggableButtonMorph(261294592) a PluggableButtonMorph(238129408))
+	Arguments and temporary variables: 
+THERE_BE_DRAGONS_HERE
+Instance of RTStyledMultiLine did not understand #elements:
+4 October 2019 10:16:16.591021 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+VM: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Wed Feb 6 15:51:18 2019 CommitHash: a838346 Plugins: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.832.sha.5bf8ad62745116525adb12aaf7d6b31418304788 (32 Bit)]
+
+RTStyledMultiLine(Object)>>doesNotUnderstand: #elements:
+	Receiver: a RTStyledMultiLine
+	Arguments and temporary variables: 
+		aMessage: 	elements: a RTGroup(a RTElement a RTElement a RTElement a RTElement a...etc...
+		exception: 	MessageNotUnderstood: RTStyledMultiLine>>elements:
+		resumeValue: 	ni
+	Receiver's instance variables: 
+		color: 	Color black
+		scale: 	1
+		rotation: 	0
+		width: 	1
+		attachPoint: 	a RTVerticalAttachPoint
+		allowSelfLoop: 	true
+		blockProducingPath: 	[ :fromPoint :toPoint | 
+| midy |
+midy := toPoint y * balan...etc...
+		head: 	a RTLineHead
+		tail: 	a RTLineTail
+		dashes: 	nil
+		capStyle: 	nil
+
+
+RTShapeBuilder>>doesNotUnderstand: #elements:
+	Receiver: a RTShapeBuilder
+	Arguments and temporary variables: 
+		aMessage: 	elements: a RTGroup(a RTElement a RTElement a RTElement a RTElement a...etc..
+	Receiver's instance variables: 
+		shape: 	a RTStyledMultiLine
+		createdElements: 	an OrderedCollection()
+		shapeInitializer: 	#yourself
+
+
+LinkedDataVisualizer>>drawEdgesWith:
+	Receiver: a LinkedDataVisualizer
+	Arguments and temporary variables: 
+		elements: 	a RTGroup(a RTElement a RTElement a RTElement a RTElement a RTElement...etc...
+		edgeBuilder: 	a RTShapeBuilde
+	Receiver's instance variables: 
+		gap: 	35
+		elementSize: 	30
+		colors: 	a Dictionary(#data->Color blue #header->Color green #highlight->Color y...etc...
+		shapes: 	a Dictionary(#data->a RTCompositeShape #edgeBuilder->a RTShapeBuilder #...etc...
+		operation: 	nil
+		operands: 	nil
+		process: 	nil
+		operationBlock: 	nil
+		composer: 	a RTComposer
+		namedGroups: 	#()
+		backgroundGroups: 	#()
+		metaLinks: 	an OrderedCollection()
+		delay: 	<<error during printing>>
+
+LinkedDataVisualizer>>display:
+	Receiver: a LinkedDataVisualizer
+	Arguments and temporary variables: 
+		linkedStructure: 	a COOSparseMatrix
+		nodes: 	an OrderedCollection(a COOSparseMatrixNode a COOSparseMatrixNode a COOSp...etc...
+		elements: 	a RTGroup(a RTElement a RTElement a RTElement a RTElement a RTElement...etc..
+	Receiver's instance variables: 
+		gap: 	35
+		elementSize: 	30
+		colors: 	a Dictionary(#data->Color blue #header->Color green #highlight->Color y...etc...
+		shapes: 	a Dictionary(#data->a RTCompositeShape #edgeBuilder->a RTShapeBuilder #...etc...
+		operation: 	nil
+		operands: 	nil
+		process: 	nil
+		operationBlock: 	nil
+		composer: 	a RTComposer
+		namedGroups: 	#()
+		backgroundGroups: 	#()
+		metaLinks: 	an OrderedCollection()
+		delay: 	<<error during printing>>
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	ni
+	Receiver's instance variables: 
+		ast: 	DoIt
+	mat := COOSparseMatrix
+		withAll:
+			{{1 . 2 . 0}.
+			{1 . 0 . 2}.
+	...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	ni
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	nil
+		textArea: 	a RubEditingArea(230930944)
+		findReplaceService: 	nil
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+		completionEngine: 	a CompletionController
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | t selection: result 
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	nil
+		textArea: 	a RubEditingArea(230930944)
+		findReplaceService: 	nil
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+		completionEngine: 	a CompletionController
+
+
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluat
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(1060797440)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+	Receiver: a RubEditingArea(230930944)
+	Arguments and temporary variables: 
+		editBlock: 	[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+text...etc..
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (580@164)
+		owner: 	a TransformWithLayoutMorph(755843840)
+		submorphs: 	an Array(a RubCursor(598148608) a RubPrimarySelectionMorph(953463296...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (716731904) [other:  (announcer -> an Announcer) (k...etc...
+		model: 	a GLMRubricSmalltalkTextModel
+		paragraph: 	a RubShoutStylerDecorator
+		editor: 	a RubSmalltalkEditor
+		scrollPane: 	a RubTextScrollPane(888789248)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Code Pro
+		textColor: 	Color white
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubSmalltalkScriptingMode
+		cursor: 	a RubCursor(598148608)
+		segments: 	an OrderedCollection(a RubHighlightSegmentMorph(879748864))
+		getMenuPolicy: 	nil
+		mouseDownPoint: 	nil
+		completionEngine: 	a CompletionController
+		maxLength: 	nil
+		findReplaceService: 	a RubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubSmalltalkEditor
+
+
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+	Receiver: a GLMMorphicPharoScriptRenderer
+	Arguments and temporary variables: 
+		ann: 	a GLMHighlightAndEvaluat
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(1060797440)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(827260416) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	[ textMorph textArea
+	handleEdit: [ textMorph textArea editor high...etc..
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(391574016))
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a GLMSystemWindow(354358272) named: Pl...etc...
+		lastStepTime: 	1267827
+		lastStepMessage: 	nil
+		lastCycleTime: 	1267865
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(598148608)))
+		lastAlarmTime: 	1267827
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(391574016)
+		currentCursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0...etc...
+		worldRenderer: 	a VMWorldRenderer
+		realWindowExtent: 	(1536@801)
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(827260416) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1536@801)
+		owner: 	nil
+		submorphs: 	an Array(a MenubarMorph(830362112) a TaskbarMorph(540991488) a GLMSy...etc...
+		fullBounds: 	(0@0) corner: (1536@801)
+		color: 	(Color r: 0.29521016617790813 g: 0.29521016617790813 b: 0.29521016617790...etc...
+		extension: 	a MorphExtension (469916672) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.8611925708699902 g: 1.0 b: 0.7223851417399805 alpha: 1...etc...
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+
+
+WorldState>>doOneCycleNowFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(827260416) [world
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(391574016))
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a GLMSystemWindow(354358272) named: Pl...etc...
+		lastStepTime: 	1267827
+		lastStepMessage: 	nil
+		lastCycleTime: 	1267865
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(598148608)))
+		lastAlarmTime: 	1267827
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(391574016)
+		currentCursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0...etc...
+		worldRenderer: 	a VMWorldRenderer
+		realWindowExtent: 	(1536@801)
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(827260416) [world
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(391574016))
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> a GLMSystemWindow(354358272) named: Pl...etc...
+		lastStepTime: 	1267827
+		lastStepMessage: 	nil
+		lastCycleTime: 	1267865
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(598148608)))
+		lastAlarmTime: 	1267827
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+		activeHand: 	a HandMorph(391574016)
+		currentCursor: 	((CursorWithMask
+	extent: (16@16)
+	depth: 1
+	fromArray: #(
+		2r0...etc...
+		worldRenderer: 	a VMWorldRenderer
+		realWindowExtent: 	(1536@801)
+
+
+WorldMorph>>doOneCycle
+	Receiver: a WorldMorph(827260416) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1536@801)
+		owner: 	nil
+		submorphs: 	an Array(a MenubarMorph(830362112) a TaskbarMorph(540991488) a GLMSy...etc...
+		fullBounds: 	(0@0) corner: (1536@801)
+		color: 	(Color r: 0.29521016617790813 g: 0.29521016617790813 b: 0.29521016617790...etc...
+		extension: 	a MorphExtension (469916672) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.8611925708699902 g: 1.0 b: 0.7223851417399805 alpha: 1...etc...
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+
+
+WorldMorph class>>doOneCycle
+	Receiver: WorldMorph
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		superclass: 	PasteUpMorph
+		methodDict: 	a MethodDictionary(#acceptDroppingMorph:event:->WorldMorph>>#accept...etc...
+		format: 	65547
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldMorph. OSWindowWorldMorph}
+		name: 	#WorldMorph
+		classPool: 	a Dictionary(#AllowDropFiles->nil #CursorOwnerWorld->a WorldMorph(82...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		announcer: 	nil
+		displayScaleFactor: 	1
+
+
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+	Receiver: a MorphicUIManager
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		activeTranscript: 	nil
+
+
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	MorphicUIManager>>spawnNewProcess
+		startpc: 	65
+		numArgs: 	0
+
+
+
+--- The full stack ---
+RTStyledMultiLine(Object)>>doesNotUnderstand: #elements:
+RTShapeBuilder>>doesNotUnderstand: #elements:
+LinkedDataVisualizer>>drawEdgesWith:
+LinkedDataVisualizer>>display:
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ textMorph textArea editor highlightEvaluateAndDo: ann action.
+textMorph shoutStyler style: textMorph text ] in [ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+[ textMorph textArea
+	handleEdit: [ textMorph textArea editor highlightEvaluateAndDo: ann action.
+		textMorph shoutStyler style: textMorph text ] ] in GLMMorphicPharoScriptRenderer(GLMMorphicPharoCodeRenderer)>>actOnHighlightAndEvaluate:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Instance of IceTipPullModel did not understand #name
+4 October 2019 10:18:03.881021 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+VM: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Wed Feb 6 15:51:18 2019 CommitHash: a838346 Plugins: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.832.sha.5bf8ad62745116525adb12aaf7d6b31418304788 (32 Bit)]
+
+IceTipPullModel(Object)>>doesNotUnderstand: #name
+	Receiver: an IceTipPullModel
+	Arguments and temporary variables: 
+		aMessage: 	name
+		exception: 	MessageNotUnderstood: IceTipPullModel>>name
+		resumeValue: 	ni
+	Receiver's instance variables: 
+		entity: 	IceLibgitRepository(linked-data-visualizer)
+		repositoryModel: 	an IceTipCachedModel(an IceTipRepositoryModel)
+		remote: 	origin (https://github.com/YaroslavKormushyn/linked-data-visualizer.git...etc...
+
+
+IceTipCachedModel>>name
+	Receiver: an IceTipCachedModel(an IceTipPullModel)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		realObject: 	an IceTipPullModel
+		cache: 	an IceTipCache
+
+
+IceTipResetBranchToThisCommitCommand>>defaultMenuItemName
+	Receiver: an IceTipResetBranchToThisCommitCommand
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		repositoryModel: 	an IceTipCachedModel(an IceTipRepositoryModel)
+		selectedCommitish: 	an IceTipCachedModel(an IceTipCommitModel)
+		selectedBranch: 	an IceTipCachedModel(an IceTipPullModel)
+
+
+CmdContextMenuActivation(CmdMenuCommandActivationStrategy)>>menuItemNameFor:
+	Receiver: a CmdContextMenuActivation(CmdRootMenuGroup; 10)
+	Arguments and temporary variables: 
+		aCommand: 	an IceTipResetBranchToThisCommitComman
+	Receiver's instance variables: 
+		annotatedClass: 	IceTipResetBranchToThisCommitCommand
+		declarationSelector: 	#browserHistoryContextActivation
+		priority: 	0
+		activeContext: 	a SimpleAnnotationContext(IceTipHistoryContext)
+		menuItemOrder: 	10
+		menuGroup: 	CmdRootMenuGroup
+		menuItemName: 	nil
+
+
+CmdCommandActivator>>menuItemName
+	Receiver: a CmdCommandActivator(an IceTipResetBranchToThisCommitCommand)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		command: 	an IceTipResetBranchToThisCommitCommand
+		context: 	an IceTipHistoryContext
+		activationStrategy: 	a CmdContextMenuActivation(CmdRootMenuGroup; 10)
+
+
+CmdCommandMenuItem>>name
+	Receiver: <<error during printing>>
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		parentGroup: 	a CmdRootMenuGroup
+		activator: 	a CmdCommandActivator(an IceTipResetBranchToThisCommitCommand)
+
+
+[ :a :b | 
+a order = b order
+	ifTrue: [ a name <= b name ]
+	ifFalse: [ a order <= b order ] ] in CmdRootMenuGroup(CmdMenuGroup)>>initialize
+	Receiver: a CmdRootMenuGroup
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		parentGroup: 	nil
+		contents: 	a SortedCollection(a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCo...etc...
+		name: 	nil
+
+
+SortedCollection>>indexForInserting:
+	Receiver: a SortedCollection(a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCommandMenuItem(Branch....etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		array: 	an Array(nil nil nil a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCom...etc...
+		firstIndex: 	4
+		lastIndex: 	10
+		sortBlock: 	[ :a :b | 
+a order = b order
+	ifTrue: [ a name <= b name ]
+	ifFalse:...etc...
+
+
+SortedCollection>>add:
+	Receiver: a SortedCollection(a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCommandMenuItem(Branch....etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		array: 	an Array(nil nil nil a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCom...etc...
+		firstIndex: 	4
+		lastIndex: 	10
+		sortBlock: 	[ :a :b | 
+a order = b order
+	ifTrue: [ a name <= b name ]
+	ifFalse:...etc...
+
+
+CmdRootMenuGroup(CmdMenuGroup)>>addItem:
+	Receiver: a CmdRootMenuGroup
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		parentGroup: 	nil
+		contents: 	a SortedCollection(a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCo...etc...
+		name: 	nil
+
+
+CmdMenu>>buildCommandItemInContext:activatingBy:
+	Receiver: a CmdMenu
+	Arguments and temporary variables: 
+		aToolContext: 	an IceTipHistoryContext
+		anActivationStrategy: 	a CmdContextMenuActivation(CmdRootMenuGroup; 10)
+		commandActivator: 	a CmdCommandActivator(an IceTipResetBranchToThisCommitCommand...etc...
+		group: 	a CmdRootMenuGrou
+	Receiver's instance variables: 
+		rootGroup: 	a CmdRootMenuGroup
+		activationStrategyClass: 	CmdContextMenuActivation
+
+
+[ :activation | self buildCommandItemInContext: aToolContext activatingBy: activation ] in CmdMenu>>buildInContext:
+	Receiver: a CmdMenu
+	Arguments and temporary variables: 
+		aToolContext: 	an IceTipHistoryContext
+		activation: 	a CmdContextMenuActivation(CmdRootMenuGroup; 10
+	Receiver's instance variables: 
+		rootGroup: 	a CmdRootMenuGroup
+		activationStrategyClass: 	CmdContextMenuActivation
+
+
+SortedCollection(SequenceableCollection)>>select:thenDo:
+	Receiver: a SortedCollection(a CmdContextMenuActivation(CmdRootMenuGroup; 1000) a CmdContextMenuActi...etc...
+	Arguments and temporary variables: 
+		selectBock: 	[ :each | each isVisibleInContext: anAnnotationUser ]
+		aBlock: 	[ :activation | self buildCommandItemInContext: aToolContext activating...etc...
+		each: 	a CmdContextMenuActivation(CmdRootMenuGroup; 10)
+		index: 	11
+	Receiver's instance variables: 
+		array: 	an Array(nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil...etc...
+		firstIndex: 	157
+		lastIndex: 	320
+		sortBlock: 	a ReverseSortFunction
+
+
+CmdContextMenuActivation class(ClassAnnotation class)>>visibleInstancesInContext:do:
+	Receiver: CmdContextMenuActivation
+	Arguments and temporary variables: 
+		anAnnotationUser: 	an IceTipHistoryContext
+		aBlock: 	[ :activation | self buildCommandItemInContext: aToolContext activating...etc..
+	Receiver's instance variables: 
+		superclass: 	CmdMenuCommandActivationStrategy
+		methodDict: 	a MethodDictionary()
+		format: 	65543
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CmdContextMenuActivation
+		classPool: 	a Dictionary()
+		sharedPools: 	nil
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Commander-Activators-ContextMenu'
+		redefinedInstances: 	nil
+
+
+CmdMenu>>buildInContext:
+	Receiver: a CmdMenu
+	Arguments and temporary variables: 
+		aToolContext: 	an IceTipHistoryContex
+	Receiver's instance variables: 
+		rootGroup: 	a CmdRootMenuGroup
+		activationStrategyClass: 	CmdContextMenuActivation
+
+
+CmdContextMenuActivation class(CmdMenuCommandActivationStrategy class)>>buildMenuInContext:
+	Receiver: CmdContextMenuActivation
+	Arguments and temporary variables: 
+		aToolContext: 	an IceTipHistoryContext
+		menu: 	a CmdMen
+	Receiver's instance variables: 
+		superclass: 	CmdMenuCommandActivationStrategy
+		methodDict: 	a MethodDictionary()
+		format: 	65543
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CmdContextMenuActivation
+		classPool: 	a Dictionary()
+		sharedPools: 	nil
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Commander-Activators-ContextMenu'
+		redefinedInstances: 	nil
+
+
+CmdContextMenuActivation class(CmdMenuCommandActivationStrategy class)>>buildContextMenuFor:inContext:
+	Receiver: CmdContextMenuActivation
+	Arguments and temporary variables: 
+		aMorph: 	a FTTableMorph(731657984)
+		aToolContext: 	an IceTipHistoryContext
+		menu: 	ni
+	Receiver's instance variables: 
+		superclass: 	CmdMenuCommandActivationStrategy
+		methodDict: 	a MethodDictionary()
+		format: 	65543
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CmdContextMenuActivation
+		classPool: 	a Dictionary()
+		sharedPools: 	nil
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Commander-Activators-ContextMenu'
+		redefinedInstances: 	nil
+
+
+IceTipDataSource>>menuColumn:row:
+	Receiver: an IceTipDataSource
+	Arguments and temporary variables: 
+		column: 	an IceTipTableColumn
+		rowIndex: 	1
+		menuSelection: 	an IceTipCachedModel(an IceTipCommitModel)
+		context: 	an IceTipHistoryContex
+	Receiver's instance variables: 
+		table: 	a FTTableMorph(731657984)
+		elements: 	an OrderedCollection(an IceTipCachedModel(an IceTipCommitModel))
+		unsortedElements: 	nil
+		tool: 	an IceTipHistoryBrowser
+
+
+FTTableMorph>>showMenuForIndex:
+	Receiver: a FTTableMorph(731657984)
+	Arguments and temporary variables: 
+		aTuple: 	#(1 2)
+		menu: 	nil
+		rowIndex: 	1
+		columnIndex: 	
+	Receiver's instance variables: 
+		bounds: 	(521.0@275.0) corner: (1311.0@508.0)
+		owner: 	a PanelMorph(486788608)
+		submorphs: 	an Array(a FTTableContainerMorph(787700992))
+		fullBounds: 	(521@275) corner: (1311@508)
+		color: 	(Color r: 0.1300097751710655 g: 0.1300097751710655 b: 0.1300097751710655...etc...
+		extension: 	a MorphExtension (618780928) [other:  (announcer -> an Announcer) (k...etc...
+		container: 	a FTTableContainerMorph(787700992)
+		verticalScrollBar: 	a ScrollBar(665524992)
+		horizontalScrollBar: 	nil
+		selectionColor: 	nil
+		selectedIndexes: 	#(1)
+		highlightedIndexes: 	#()
+		showIndex: 	1
+		dataSource: 	an IceTipDataSource
+		intercellSpacing: 	nil
+		rowHeight: 	20.333333333333336
+		selectionStrategy: 	a FTSimpleSelection
+		columns: 	an Array(an IceTipTableColumn an IceTipTableColumn an IceTipTableColum...etc...
+		secondarySelectionColor: 	nil
+		headerColor: 	nil
+		showColumnHeaders: 	true
+		allowsDeselection: 	nil
+		needToggleAtMouseUp: 	true
+		function: 	a FTSearchFunction
+		resizable: 	true
+		trialHSB: 	nil
+		selectionModeStrategy: 	a FTRowSelectionModeStrategy
+
+
+FTTableMorph>>showMenuForPosition:
+	Receiver: a FTTableMorph(731657984)
+	Arguments and temporary variables: 
+		aPoint: 	(668@311)
+		tuple: 	#(1 2
+	Receiver's instance variables: 
+		bounds: 	(521.0@275.0) corner: (1311.0@508.0)
+		owner: 	a PanelMorph(486788608)
+		submorphs: 	an Array(a FTTableContainerMorph(787700992))
+		fullBounds: 	(521@275) corner: (1311@508)
+		color: 	(Color r: 0.1300097751710655 g: 0.1300097751710655 b: 0.1300097751710655...etc...
+		extension: 	a MorphExtension (618780928) [other:  (announcer -> an Announcer) (k...etc...
+		container: 	a FTTableContainerMorph(787700992)
+		verticalScrollBar: 	a ScrollBar(665524992)
+		horizontalScrollBar: 	nil
+		selectionColor: 	nil
+		selectedIndexes: 	#(1)
+		highlightedIndexes: 	#()
+		showIndex: 	1
+		dataSource: 	an IceTipDataSource
+		intercellSpacing: 	nil
+		rowHeight: 	20.333333333333336
+		selectionStrategy: 	a FTSimpleSelection
+		columns: 	an Array(an IceTipTableColumn an IceTipTableColumn an IceTipTableColum...etc...
+		secondarySelectionColor: 	nil
+		headerColor: 	nil
+		showColumnHeaders: 	true
+		allowsDeselection: 	nil
+		needToggleAtMouseUp: 	true
+		function: 	a FTSearchFunction
+		resizable: 	true
+		trialHSB: 	nil
+		selectionModeStrategy: 	a FTRowSelectionModeStrategy
+
+
+FTTableMorph>>click:
+	Receiver: a FTTableMorph(731657984)
+	Arguments and temporary variables: 
+		event: 	[(668@311) mouseDown yellow 17815625 nil
+	Receiver's instance variables: 
+		bounds: 	(521.0@275.0) corner: (1311.0@508.0)
+		owner: 	a PanelMorph(486788608)
+		submorphs: 	an Array(a FTTableContainerMorph(787700992))
+		fullBounds: 	(521@275) corner: (1311@508)
+		color: 	(Color r: 0.1300097751710655 g: 0.1300097751710655 b: 0.1300097751710655...etc...
+		extension: 	a MorphExtension (618780928) [other:  (announcer -> an Announcer) (k...etc...
+		container: 	a FTTableContainerMorph(787700992)
+		verticalScrollBar: 	a ScrollBar(665524992)
+		horizontalScrollBar: 	nil
+		selectionColor: 	nil
+		selectedIndexes: 	#(1)
+		highlightedIndexes: 	#()
+		showIndex: 	1
+		dataSource: 	an IceTipDataSource
+		intercellSpacing: 	nil
+		rowHeight: 	20.333333333333336
+		selectionStrategy: 	a FTSimpleSelection
+		columns: 	an Array(an IceTipTableColumn an IceTipTableColumn an IceTipTableColum...etc...
+		secondarySelectionColor: 	nil
+		headerColor: 	nil
+		showColumnHeaders: 	true
+		allowsDeselection: 	nil
+		needToggleAtMouseUp: 	true
+		function: 	a FTSearchFunction
+		resizable: 	true
+		trialHSB: 	nil
+		selectionModeStrategy: 	a FTRowSelectionModeStrategy
+
+
+MouseClickState>>click
+	Receiver: a MouseClickState[#firstClickUp]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		clickClient: 	a FTTableMorph(731657984)
+		clickState: 	#firstClickUp
+		firstClickDown: 	[(668@311) mouseDown yellow 17815625 nil]
+		firstClickUp: 	[(668@311) mouseUp 17815671 nil]
+		firstClickTime: 	17815625
+		clickSelector: 	#click:
+		THERE_BE_DRAGONS_HERE
+Instance of IceTipPullModel did not understand #name
+4 October 2019 10:18:11.755021 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+StackToRegisterMappingCogit VMMaker.oscog-eem.2509 uuid: 91e81f64-95de-4914-a960-8f842be3a194 Feb  7 2019
+VM: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Wed Feb 6 15:51:18 2019 CommitHash: a838346 Plugins: 201902062351 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.832.sha.5bf8ad62745116525adb12aaf7d6b31418304788 (32 Bit)]
+
+IceTipPullModel(Object)>>doesNotUnderstand: #name
+	Receiver: an IceTipPullModel
+	Arguments and temporary variables: 
+		aMessage: 	name
+		exception: 	MessageNotUnderstood: IceTipPullModel>>name
+		resumeValue: 	ni
+	Receiver's instance variables: 
+		entity: 	IceLibgitRepository(linked-data-visualizer)
+		repositoryModel: 	an IceTipCachedModel(an IceTipRepositoryModel)
+		remote: 	origin (https://github.com/YaroslavKormushyn/linked-data-visualizer.git...etc...
+
+
+IceTipCachedModel>>name
+	Receiver: an IceTipCachedModel(an IceTipPullModel)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		realObject: 	an IceTipPullModel
+		cache: 	an IceTipCache
+
+
+IceTipResetBranchToThisCommitCommand>>defaultMenuItemName
+	Receiver: an IceTipResetBranchToThisCommitCommand
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		repositoryModel: 	an IceTipCachedModel(an IceTipRepositoryModel)
+		selectedCommitish: 	an IceTipCachedModel(an IceTipCommitModel)
+		selectedBranch: 	an IceTipCachedModel(an IceTipPullModel)
+
+
+CmdContextMenuActivation(CmdMenuCommandActivationStrategy)>>menuItemNameFor:
+	Receiver: a CmdContextMenuActivation(CmdRootMenuGroup; 10)
+	Arguments and temporary variables: 
+		aCommand: 	an IceTipResetBranchToThisCommitComman
+	Receiver's instance variables: 
+		annotatedClass: 	IceTipResetBranchToThisCommitCommand
+		declarationSelector: 	#browserHistoryContextActivation
+		priority: 	0
+		activeContext: 	a SimpleAnnotationContext(IceTipHistoryContext)
+		menuItemOrder: 	10
+		menuGroup: 	CmdRootMenuGroup
+		menuItemName: 	nil
+
+
+CmdCommandActivator>>menuItemName
+	Receiver: a CmdCommandActivator(an IceTipResetBranchToThisCommitCommand)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		command: 	an IceTipResetBranchToThisCommitCommand
+		context: 	an IceTipHistoryContext
+		activationStrategy: 	a CmdContextMenuActivation(CmdRootMenuGroup; 10)
+
+
+CmdCommandMenuItem>>name
+	Receiver: <<error during printing>>
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		parentGroup: 	a CmdRootMenuGroup
+		activator: 	a CmdCommandActivator(an IceTipResetBranchToThisCommitCommand)
+
+
+[ :a :b | 
+a order = b order
+	ifTrue: [ a name <= b name ]
+	ifFalse: [ a order <= b order ] ] in CmdRootMenuGroup(CmdMenuGroup)>>initialize
+	Receiver: a CmdRootMenuGroup
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		parentGroup: 	nil
+		contents: 	a SortedCollection(a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCo...etc...
+		name: 	nil
+
+
+SortedCollection>>indexForInserting:
+	Receiver: a SortedCollection(a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCommandMenuItem(Branch....etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		array: 	an Array(nil nil nil a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCom...etc...
+		firstIndex: 	4
+		lastIndex: 	10
+		sortBlock: 	[ :a :b | 
+a order = b order
+	ifTrue: [ a name <= b name ]
+	ifFalse:...etc...
+
+
+SortedCollection>>add:
+	Receiver: a SortedCollection(a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCommandMenuItem(Branch....etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		array: 	an Array(nil nil nil a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCom...etc...
+		firstIndex: 	4
+		lastIndex: 	10
+		sortBlock: 	[ :a :b | 
+a order = b order
+	ifTrue: [ a name <= b name ]
+	ifFalse:...etc...
+
+
+CmdRootMenuGroup(CmdMenuGroup)>>addItem:
+	Receiver: a CmdRootMenuGroup
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		parentGroup: 	nil
+		contents: 	a SortedCollection(a CmdCommandMenuItem(Adopt commit 3355c98) a CmdCo...etc...
+		name: 	nil
+
+
+CmdMenu>>buildCommandItemInContext:activatingBy:
+	Receiver: a CmdMenu
+	Arguments and temporary variables: 
+		aToolContext: 	an IceTipHistoryContext
+		anActivationStrategy: 	a CmdContextMenuActivation(CmdRootMenuGroup; 10)
+		commandActivator: 	a CmdCommandActivator(an IceTipResetBranchToThisCommitCommand...etc...
+		group: 	a CmdRootMenuGrou
+	Receiver's instance variables: 
+		rootGroup: 	a CmdRootMenuGroup
+		activationStrategyClass: 	CmdContextMenuActivation
+
+
+[ :activation | self buildCommandItemInContext: aToolContext activatingBy: activation ] in CmdMenu>>buildInContext:
+	Receiver: a CmdMenu
+	Arguments and temporary variables: 
+		aToolContext: 	an IceTipHistoryContext
+		activation: 	a CmdContextMenuActivation(CmdRootMenuGroup; 10
+	Receiver's instance variables: 
+		rootGroup: 	a CmdRootMenuGroup
+		activationStrategyClass: 	CmdContextMenuActivation
+
+
+SortedCollection(SequenceableCollection)>>select:thenDo:
+	Receiver: a SortedCollection(a CmdContextMenuActivation(CmdRootMenuGroup; 1000) a CmdContextMenuActi...etc...
+	Arguments and temporary variables: 
+		selectBock: 	[ :each | each isVisibleInContext: anAnnotationUser ]
+		aBlock: 	[ :activation | self buildCommandItemInContext: aToolContext activating...etc...
+		each: 	a CmdContextMenuActivation(CmdRootMenuGroup; 10)
+		index: 	11
+	Receiver's instance variables: 
+		array: 	an Array(nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil nil...etc...
+		firstIndex: 	157
+		lastIndex: 	320
+		sortBlock: 	a ReverseSortFunction
+
+
+CmdContextMenuActivation class(ClassAnnotation class)>>visibleInstancesInContext:do:
+	Receiver: CmdContextMenuActivation
+	Arguments and temporary variables: 
+		anAnnotationUser: 	an IceTipHistoryContext
+		aBlock: 	[ :activation | self buildCommandItemInContext: aToolContext activating...etc..
+	Receiver's instance variables: 
+		superclass: 	CmdMenuCommandActivationStrategy
+		methodDict: 	a MethodDictionary()
+		format: 	65543
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CmdContextMenuActivation
+		classPool: 	a Dictionary()
+		sharedPools: 	nil
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Commander-Activators-ContextMenu'
+		redefinedInstances: 	nil
+
+
+CmdMenu>>buildInContext:
+	Receiver: a CmdMenu
+	Arguments and temporary variables: 
+		aToolContext: 	an IceTipHistoryContex
+	Receiver's instance variables: 
+		rootGroup: 	a CmdRootMenuGroup
+		activationStrategyClass: 	CmdContextMenuActivation
+
+
+CmdContextMenuActivation class(CmdMenuCommandActivationStrategy class)>>buildMenuInContext:
+	Receiver: CmdContextMenuActivation
+	Arguments and temporary variables: 
+		aToolContext: 	an IceTipHistoryContext
+		menu: 	a CmdMen
+	Receiver's instance variables: 
+		superclass: 	CmdMenuCommandActivationStrategy
+		methodDict: 	a MethodDictionary()
+		format: 	65543
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CmdContextMenuActivation
+		classPool: 	a Dictionary()
+		sharedPools: 	nil
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Commander-Activators-ContextMenu'
+		redefinedInstances: 	nil
+
+
+CmdContextMenuActivation class(CmdMenuCommandActivationStrategy class)>>buildContextMenuFor:inContext:
+	Receiver: CmdContextMenuActivation
+	Arguments and temporary variables: 
+		aMorph: 	a FTTableMorph(731657984)
+		aToolContext: 	an IceTipHistoryContext
+		menu: 	ni
+	Receiver's instance variables: 
+		superclass: 	CmdMenuCommandActivationStrategy
+		methodDict: 	a MethodDictionary()
+		format: 	65543
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CmdContextMenuActivation
+		classPool: 	a Dictionary()
+		sharedPools: 	nil
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Commander-Activators-ContextMenu'
+		redefinedInstances: 	nil
+
+
+IceTipDataSource>>menuColumn:row:
+	Receiver: an IceTipDataSource
+	Arguments and temporary variables: 
+		column: 	an IceTipTableColumn
+		rowIndex: 	1
+		menuSelection: 	an IceTipCachedModel(an IceTipCommitModel)
+		context: 	an IceTipHistoryContex
+	Receiver's instance variables: 
+		table: 	a FTTableMorph(731657984)
+		elements: 	an OrderedCollection(an IceTipCachedModel(an IceTipCommitModel))
+		unsortedElements: 	nil
+		tool: 	an IceTipHistoryBrowser
+
+
+FTTableMorph>>showMenuForIndex:
+	Receiver: a FTTableMorph(731657984)
+	Arguments and temporary variables: 
+		aTuple: 	#(1 1)
+		menu: 	nil
+		rowIndex: 	1
+		columnIndex: 	
+	Receiver's instance variables: 
+		bounds: 	(521.0@275.0) corner: (1311.0@508.0)
+		owner: 	a PanelMorph(486788608)
+		submorphs: 	an Array(a FTTableContainerMorph(787700992))
+		fullBounds: 	(521@275) corner: (1311@508)
+		color: 	(Color r: 0.1300097751710655 g: 0.1300097751710655 b: 0.1300097751710655...etc...
+		extension: 	a MorphExtension (618780928) [other:  (announcer -> an Announcer) (k...etc...
+		container: 	a FTTableContainerMorph(787700992)
+		verticalScrollBar: 	a ScrollBar(665524992)
+		horizontalScrollBar: 	nil
+		selectionColor: 	nil
+		selectedIndexes: 	#(1)
+		highlightedIndexes: 	#()
+		showIndex: 	1
+		dataSource: 	an IceTipDataSource
+		intercellSpacing: 	nil
+		rowHeight: 	20.333333333333336
+		selectionStrategy: 	a FTSimpleSelection
+		columns: 	an Array(an IceTipTableColumn an IceTipTableColumn an IceTipTableColum...etc...
+		secondarySelectionColor: 	nil
+		headerColor: 	nil
+		showColumnHeaders: 	true
+		allowsDeselection: 	nil
+		needToggleAtMouseUp: 	true
+		function: 	a FTSearchFunction
+		resizable: 	true
+		trialHSB: 	nil
+		selectionModeStrategy: 	a FTRowSelectionModeStrategy
+
+
+FTTableMorph>>showMenuForPosition:
+	Receiver: a FTTableMorph(731657984)
+	Arguments and temporary variables: 
+		aPoint: 	(595@304)
+		tuple: 	#(1 1
+	Receiver's instance variables: 
+		bounds: 	(521.0@275.0) corner: (1311.0@508.0)
+		owner: 	a PanelMorph(486788608)
+		submorphs: 	an Array(a FTTableContainerMorph(787700992))
+		fullBounds: 	(521@275) corner: (1311@508)
+		color: 	(Color r: 0.1300097751710655 g: 0.1300097751710655 b: 0.1300097751710655...etc...
+		extension: 	a MorphExtension (618780928) [other:  (announcer -> an Announcer) (k...etc...
+		container: 	a FTTableContainerMorph(787700992)
+		verticalScrollBar: 	a ScrollBar(665524992)
+		horizontalScrollBar: 	nil
+		selectionColor: 	nil
+		selectedIndexes: 	#(1)
+		highlightedIndexes: 	#()
+		showIndex: 	1
+		dataSource: 	an IceTipDataSource
+		intercellSpacing: 	nil
+		rowHeight: 	20.333333333333336
+		selectionStrategy: 	a FTSimpleSelection
+		columns: 	an Array(an IceTipTableColumn an IceTipTableColumn an IceTipTableColum...etc...
+		secondarySelectionColor: 	nil
+		headerColor: 	nil
+		showColumnHeaders: 	true
+		allowsDeselection: 	nil
+		needToggleAtMouseUp: 	true
+		function: 	a FTSearchFunction
+		resizable: 	true
+		trialHSB: 	nil
+		selectionModeStrategy: 	a FTRowSelectionModeStrategy
+
+
+FTTableMorph>>click:
+	Receiver: a FTTableMorph(731657984)
+	Arguments and temporary variables: 
+		event: 	[(595@304) mouseDown yellow 17823515 nil
+	Receiver's instance variables: 
+		bounds: 	(521.0@275.0) corner: (1311.0@508.0)
+		owner: 	a PanelMorph(486788608)
+		submorphs: 	an Array(a FTTableContainerMorph(787700992))
+		fullBounds: 	(521@275) corner: (1311@508)
+		color: 	(Color r: 0.1300097751710655 g: 0.1300097751710655 b: 0.1300097751710655...etc...
+		extension: 	a MorphExtension (618780928) [other:  (announcer -> an Announcer) (k...etc...
+		container: 	a FTTableContainerMorph(787700992)
+		verticalScrollBar: 	a ScrollBar(665524992)
+		horizontalScrollBar: 	nil
+		selectionColor: 	nil
+		selectedIndexes: 	#(1)
+		highlightedIndexes: 	#()
+		showIndex: 	1
+		dataSource: 	an IceTipDataSource
+		intercellSpacing: 	nil
+		rowHeight: 	20.333333333333336
+		selectionStrategy: 	a FTSimpleSelection
+		columns: 	an Array(an IceTipTableColumn an IceTipTableColumn an IceTipTableColum...etc...
+		secondarySelectionColor: 	nil
+		headerColor: 	nil
+		showColumnHeaders: 	true
+		allowsDeselection: 	nil
+		needToggleAtMouseUp: 	true
+		function: 	a FTSearchFunction
+		resizable: 	true
+		trialHSB: 	nil
+		selectionModeStrategy: 	a FTRowSelectionModeStrategy
+
+
+MouseClickState>>click
+	Receiver: a MouseClickState[#firstClickUp]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		clickClient: 	a FTTableMorph(731657984)
+		clickState: 	#firstClickUp
+		firstClickDown: 	[(595@304) mouseDown yellow 17823515 nil]
+		firstClickUp: 	[(595@304) mouseUp 17823562 nil]
+		firstClickTime: 	17823515
+		clickSelector: 	#click:
+		dblClickSelector: 	#doubleClick:
+		dblClickTime: 	350
+		dblClickTimeoutSelector: 	#doubleClickTimeout:
+		dragSelector: 	#startDrag:
+		dragThreshold: 	10
+		localStamp: 	1383027
+
+
+MouseClickState>>handleEvent:from:
+	Receiver: a MouseClickState[#firstClickUp]
+	Arguments and temporary variables: 
+		evt: 	[(595@304) mouseUp 17823562 nil]
+		aHand: 	a HandMorph(391574016)
+		localEvt: 	[(595@304) mouseUp 17823562 nil]
+		timedOut: 	false
+		isDrag: 	fals
+	Receiver's instance variables: 
+		clickClient: 	a FTTableMorph(731657984)
+		clickState: 	#firstClickUp
+		firstClickDown: 	[(595@304) mouseDown yellow 17823515 nil]
+		firstClickUp: 	[(595@304) mouseUp 17823562 nil]
+		firstClickTime: 	17823515
+		clickSelector: 	#click:
+		dblClickSelector: 	#doubleClick:
+		dblClickTime: 	350
+		dblClickTimeoutSelector: 	#doubleClickTimeout:
+		dragSelector: 	#startDrag:
+		dragThreshold: 	10
+		localStamp: 	1383027
+
+
+HandMorph>>handleEvent:
+	Receiver: a HandMorph(391574016)
+	Arguments and temporary variables: 
+		anEvent: 	[(595@304) mouseUp 17823562 nil]
+		evt: 	[(595@304) mouseUp 17823562 nil
+	Receiver's instance variables: 
+		bounds: 	(595@304) corner: (611@320)
+		owner: 	a WorldMorph(827260416) [world]
+		submorphs: 	#()
+		fullBounds: 	(595@304) corner: (611@320)
+		color: 	Color blue
+		extension: 	a MorphExtension (880673536)
+		mouseFocus: 	a FTTableMorph(731657984)
+		keyboardFocus: 	a FTTableMorph(731657984)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	a MouseClickState[#firstClickUp]
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(595@304) mouseUp 17823562 nil]
+		targetOffset: 	(74.0@29.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 17823562 595 304 0 0 1 1)
+		lastKeyScanCode: 	71
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+HandMorph>>processEventsFromQueue:
+	Receiver: a HandMorph(391574016)
+	Arguments and temporary variables: 
+		anEventQueue: 	an InputEventSensor
+		evt: 	[(595@304) mouseUp 17823562 nil]
+		evtBuf: 	#(1 17823562 595 304 0 0 1 1)
+		type: 	1
+		hadAny: 	fals
+	Receiver's instance variables: 
+		bounds: 	(595@304) corner: (611@320)
+		owner: 	a WorldMorph(827260416) [world]
+		submorphs: 	#()
+		fullBounds: 	(595@304) corner: (611@320)
+		color: 	Color blue
+		extension: 	a MorphExtension (880673536)
+		mouseFocus: 	a FTTableMorph(731657984)
+		keyboardFocus: 	a FTTableMorph(731657984)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	a MouseClickState[#firstClickUp]
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(595@304) mouseUp 17823562 nil]
+		targetOffset: 	(74.0@29.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 17823562 595 304 0 0 1 1)
+		lastKeyScanCode: 	71
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+HandMorph>>processEvents
+	Receiver: a HandMorph(391574016)
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(595@304) corner: (611@320)
+		owner: 	a WorldMorph(827260416) [world]
+		submorphs: 	#()
+		fullBounds: 	(595@304) corner: (611@320)
+		color: 	Color blue
+		extension: 	a MorphExtension (880673536)
+		mouseFocus: 	a FTTableMorph(731657984)
+		keyboardFocus: 	a FTTableMorph(731657984)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	a MouseClickState[#firstClickUp]
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(595@304) mouseUp 17823562 nil]
+		targetOffset: 	(74.0@29.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		c

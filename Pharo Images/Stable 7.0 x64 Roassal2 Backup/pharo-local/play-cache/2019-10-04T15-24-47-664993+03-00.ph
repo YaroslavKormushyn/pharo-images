@@ -1,0 +1,1 @@
+((ZnEasy getPng: 'https://raw.githubusercontent.com/wiki/pharo-project/pharo/figures/traits.png') 	asMorph resize: 800@800; openInWindow) 
